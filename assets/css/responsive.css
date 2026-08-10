@@ -1,0 +1,315 @@
+/* ==================================================
+   ECHOES OF HUMANITY
+   RESPONSIVE SYSTEM
+   ================================================== */
+
+
+/* --------------------------------------------------
+   LARGE TABLETS / SMALL DESKTOP
+   -------------------------------------------------- */
+
+@media (max-width: 1100px) {
+
+  :root {
+    --container-width: 1040px;
+  }
+
+  .site-header .container {
+    gap: 20px;
+  }
+
+  .site-nav {
+    gap: 3px 13px;
+  }
+
+  .site-nav a {
+    font-size: 0.82rem;
+  }
+
+}
+
+
+/* --------------------------------------------------
+   TABLET
+   -------------------------------------------------- */
+
+@media (max-width: 900px) {
+
+  :root {
+    --section-padding: 70px;
+  }
+
+  .features-grid,
+  .project-grid,
+  .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero {
+    min-height: 720px;
+  }
+
+  .hero-content {
+    max-width: 760px;
+  }
+
+}
+
+
+/* --------------------------------------------------
+   MOBILE NAVIGATION
+   -------------------------------------------------- */
+
+@media (max-width: 760px) {
+
+  .site-header .container {
+    min-height: auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .site-logo a {
+    font-size: 1.2rem;
+  }
+
+  .site-nav {
+    width: 100%;
+    justify-content: center;
+    gap: 6px 14px;
+  }
+
+  .site-nav a {
+    font-size: 0.82rem;
+    padding: 5px 0;
+  }
+
+}
+
+
+/* --------------------------------------------------
+   MOBILE
+   -------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+  :root {
+    --container-padding: 16px;
+    --section-padding: 60px;
+  }
+
+
+  /* ----------------------------------------------
+     HERO
+     ---------------------------------------------- */
+
+  .hero {
+    min-height: 700px;
+    padding: 90px 0 75px;
+  }
+
+  .hero-badge {
+    max-width: 100%;
+    font-size: 0.78rem;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2.55rem;
+  }
+
+  .hero h2 {
+    font-size: 1.25rem;
+  }
+
+  .hero p {
+    font-size: 0.94rem;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr;
+    max-width: 240px;
+  }
+
+  .hero-orb {
+    width: 260px;
+    height: 260px;
+  }
+
+  .world-glow {
+    width: 450px;
+    height: 450px;
+  }
+
+  .world-map img {
+    width: 850px;
+    max-width: none;
+  }
+
+
+  /* ----------------------------------------------
+     SECTIONS
+     ---------------------------------------------- */
+
+  .features,
+  .who-we-are,
+  .global-impact,
+  .how-you-can-help,
+  .featured-projects,
+  .humanitarian-action,
+  .humanity-response-center,
+  .todays-echoes,
+  .echoes-in-action,
+  .echoes-academy,
+  .global-media-network,
+  .marketplace,
+  .merchandise-design,
+  .latest-stories,
+  .partners,
+  .join-the-movement {
+    padding: 60px 0;
+  }
+
+
+  /* ----------------------------------------------
+     SECTION HEADINGS
+     ---------------------------------------------- */
+
+  .features h2,
+  .who-we-are h2,
+  .global-impact h2,
+  .how-you-can-help h2,
+  .featured-projects h2,
+  .humanitarian-action h2,
+  .humanity-response-center h2,
+  .todays-echoes h2,
+  .echoes-in-action h2,
+  .echoes-academy h2,
+  .global-media-network h2,
+  .marketplace h2,
+  .merchandise-design h2,
+  .latest-stories h2,
+  .partners h2,
+  .join-the-movement h2 {
+    font-size: 2rem;
+  }
+
+
+  /* ----------------------------------------------
+     GRIDS
+     ---------------------------------------------- */
+
+  .features-grid,
+  .project-grid,
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+
+  /* ----------------------------------------------
+     CARDS
+     ---------------------------------------------- */
+
+  .feature-card {
+    padding: 26px 20px;
+  }
+
+  .card {
+    padding: 24px 20px;
+  }
+
+
+  /* ----------------------------------------------
+     HERO BUTTONS
+     ---------------------------------------------- */
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero .btn {
+    width: 100%;
+    min-width: 0;
+  }
+
+
+  /* ----------------------------------------------
+     GENERAL BUTTONS
+     ---------------------------------------------- */
+
+  .btn {
+    min-height: 46px;
+    padding: 11px 20px;
+    font-size: 0.9rem;
+  }
+
+
+  /* ----------------------------------------------
+     FOOTER
+     ---------------------------------------------- */
+
+  .site-footer {
+    padding: 45px 0 24px;
+  }
+
+  .site-footer nav {
+    gap: 10px 16px;
+    margin-bottom: 24px;
+  }
+
+  .site-footer nav a {
+    font-size: 0.8rem;
+  }
+
+  .site-footer p {
+    padding-top: 20px;
+    font-size: 0.75rem;
+  }
+
+}
+
+
+/* --------------------------------------------------
+   SMALL PHONES
+   -------------------------------------------------- */
+
+@media (max-width: 480px) {
+
+  .site-header .container {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  .site-nav {
+    gap: 5px 11px;
+  }
+
+  .site-nav a {
+    font-size: 0.76rem;
+  }
+
+  .hero h1 {
+    font-size: 2.25rem;
+  }
+
+  .hero h2 {
+    font-size: 1.12rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .hero-badge {
+    font-size: 0.72rem;
+    padding: 7px 12px;
+  }
+
+}
