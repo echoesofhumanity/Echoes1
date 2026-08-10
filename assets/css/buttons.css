@@ -1,0 +1,122 @@
+/* ==================================================
+   ECHOES OF HUMANITY
+   BUTTONS
+   ================================================== */
+
+
+/* --------------------------------------------------
+   BASE BUTTON
+   -------------------------------------------------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 12px 24px;
+
+  border: 1px solid transparent;
+  border-radius: 999px;
+
+  background: #24323a;
+  color: #ffffff;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+/* --------------------------------------------------
+   BASE HOVER
+   -------------------------------------------------- */
+
+.btn:hover {
+  background: #4e8f97;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(36, 50, 58, 0.15);
+}
+
+
+/* --------------------------------------------------
+   PRIMARY BUTTON
+   -------------------------------------------------- */
+
+.btn-primary {
+  background: #6aaeb5;
+  border-color: #6aaeb5;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: #4e8f97;
+  border-color: #4e8f97;
+  color: #ffffff;
+}
+
+
+/* --------------------------------------------------
+   SECONDARY BUTTON
+   -------------------------------------------------- */
+
+.btn-secondary {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.45);
+  color: #ffffff;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.8);
+  color: #ffffff;
+}
+
+
+/* --------------------------------------------------
+   BUTTON FOCUS
+   -------------------------------------------------- */
+
+.btn:focus-visible {
+  outline: 2px solid #6aaeb5;
+  outline-offset: 3px;
+}
+
+
+/* --------------------------------------------------
+   DISABLED BUTTON
+   -------------------------------------------------- */
+
+.btn:disabled,
+.btn[aria-disabled="true"] {
+  opacity: 0.5;
+  pointer-events: none;
+  transform: none;
+  box-shadow: none;
+}
+
+
+/* --------------------------------------------------
+   MOBILE
+   -------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+  .btn {
+    min-height: 46px;
+    padding: 11px 20px;
+    font-size: 0.9rem;
+  }
+
+}
