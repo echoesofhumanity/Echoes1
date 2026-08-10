@@ -1,0 +1,188 @@
+/* ==================================================
+   ECHOES OF HUMANITY
+   CARDS & GRIDS
+   ================================================== */
+
+
+/* --------------------------------------------------
+   FEATURES GRID
+   -------------------------------------------------- */
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+
+/* --------------------------------------------------
+   FEATURE CARD
+   -------------------------------------------------- */
+
+.feature-card {
+  padding: 30px 24px;
+  border: 1px solid #dfe5e3;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 8px 30px rgba(36, 50, 58, 0.06);
+  text-align: center;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  border-color: #c7d9d8;
+  box-shadow: 0 14px 35px rgba(36, 50, 58, 0.11);
+}
+
+.feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  background: #eef3f1;
+  font-size: 1.8rem;
+}
+
+.feature-card h3 {
+  margin-bottom: 10px;
+  color: #24323a;
+  font-size: 1.15rem;
+  line-height: 1.35;
+}
+
+.feature-card p {
+  color: #5f6b70;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+
+/* --------------------------------------------------
+   PROJECT GRID
+   -------------------------------------------------- */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+
+/* --------------------------------------------------
+   GENERAL CARD
+   -------------------------------------------------- */
+
+.card {
+  padding: 28px 24px;
+  border: 1px solid #dfe5e3;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 8px 30px rgba(36, 50, 58, 0.06);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #c7d9d8;
+  box-shadow: 0 14px 35px rgba(36, 50, 58, 0.11);
+}
+
+.card h3 {
+  margin-bottom: 12px;
+  color: #24323a;
+  font-size: 1.12rem;
+  line-height: 1.4;
+}
+
+.card p {
+  color: #5f6b70;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+
+/* --------------------------------------------------
+   DYNAMIC CONTENT CARDS
+   -------------------------------------------------- */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+
+/* --------------------------------------------------
+   TODAY'S ECHOES
+   -------------------------------------------------- */
+
+#todays-echoes-cards {
+  width: 100%;
+}
+
+
+/* --------------------------------------------------
+   ECHOES IN ACTION
+   -------------------------------------------------- */
+
+#echoes-in-action-cards {
+  width: 100%;
+}
+
+
+/* --------------------------------------------------
+   EMPTY DYNAMIC CARD AREA
+   -------------------------------------------------- */
+
+.cards:empty {
+  min-height: 80px;
+}
+
+
+/* --------------------------------------------------
+   TABLET
+   -------------------------------------------------- */
+
+@media (max-width: 900px) {
+
+  .features-grid,
+  .project-grid,
+  .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+
+/* --------------------------------------------------
+   MOBILE
+   -------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+  .features-grid,
+  .project-grid,
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .feature-card {
+    padding: 26px 20px;
+  }
+
+  .card {
+    padding: 24px 20px;
+  }
+
+  }
