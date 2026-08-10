@@ -1,13 +1,10 @@
-/*
- * Echoes of Humanity
- * Main JavaScript Foundation
- *
- * This file is intentionally minimal.
- * Interactive systems will be added in isolated modules.
- */
+/* ==================================================
+   ECHOES OF HUMANITY
+   MAIN JAVASCRIPT
+   ================================================== */
 
-'use strict';
+document.addEventListener("DOMContentLoaded", () => {
 
-document.addEventListener('DOMContentLoaded', () => {
-  // JavaScript foundation initialized.
+  console.log("Echoes of Humanity loaded.");
+
 });
