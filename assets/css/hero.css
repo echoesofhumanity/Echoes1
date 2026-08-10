@@ -1,0 +1,289 @@
+/* ==================================================
+   ECHOES OF HUMANITY — HERO
+   ================================================== */
+
+.hero {
+  position: relative;
+  min-height: 760px;
+  padding: 120px 0 90px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background: #071218;
+  color: #ffffff;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 28px;
+  padding: 8px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  font-size: 0.9rem;
+}
+
+.hero h1 {
+  margin-bottom: 28px;
+  font-size: clamp(2.8rem, 7vw, 5.8rem);
+  line-height: 1.02;
+  font-weight: 700;
+}
+
+.hero h2 {
+  margin-bottom: 28px;
+  font-size: clamp(1.35rem, 3vw, 2.2rem);
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.hero p {
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 36px;
+}
+
+.hero .btn {
+  min-width: 190px;
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  max-width: 600px;
+  margin: 42px auto 0;
+  gap: 16px;
+}
+
+.stat-card {
+  padding: 18px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.stat-number {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.stat-label {
+  margin-top: 4px;
+  font-size: 0.82rem;
+  opacity: 0.7;
+}
+
+
+/* --------------------------------------------------
+   WORLD
+   -------------------------------------------------- */
+
+.hero-world {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.world-glow {
+  position: absolute;
+  width: 620px;
+  height: 620px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(80, 180, 190, 0.16) 0%,
+    rgba(80, 180, 190, 0.06) 40%,
+    transparent 72%
+  );
+}
+
+.world-map {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.13;
+}
+
+.world-map img {
+  width: min(900px, 90vw);
+  filter: brightness(1.4);
+}
+
+
+/* --------------------------------------------------
+   ORB
+   -------------------------------------------------- */
+
+.hero-orb {
+  position: absolute;
+  z-index: 1;
+  width: 360px;
+  height: 360px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background:
+    radial-gradient(
+      circle at 35% 30%,
+      rgba(255, 255, 255, 0.3),
+      transparent 20%
+    ),
+    radial-gradient(
+      circle at 50% 50%,
+      rgba(70, 170, 190, 0.24),
+      rgba(7, 18, 24, 0.02) 65%,
+      transparent 72%
+    );
+  box-shadow:
+    0 0 80px rgba(80, 190, 200, 0.14),
+    inset 0 0 60px rgba(255, 255, 255, 0.04);
+  pointer-events: none;
+}
+
+
+/* --------------------------------------------------
+   PARTICLES
+   -------------------------------------------------- */
+
+.world-particle {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 12px rgba(120, 220, 230, 0.6);
+}
+
+.particle-1 {
+  top: 22%;
+  left: 18%;
+}
+
+.particle-2 {
+  top: 30%;
+  right: 20%;
+}
+
+.particle-3 {
+  top: 65%;
+  left: 14%;
+}
+
+.particle-4 {
+  top: 72%;
+  right: 17%;
+}
+
+.particle-5 {
+  top: 17%;
+  right: 40%;
+}
+
+.particle-6 {
+  bottom: 16%;
+  left: 45%;
+}
+
+
+/* --------------------------------------------------
+   SCROLL INDICATOR
+   -------------------------------------------------- */
+
+.scroll-indicator {
+  position: absolute;
+  left: 50%;
+  bottom: -55px;
+  width: 22px;
+  height: 36px;
+  transform: translateX(-50%);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+}
+
+.scroll-indicator span {
+  position: absolute;
+  top: 7px;
+  left: 50%;
+  width: 4px;
+  height: 7px;
+  transform: translateX(-50%);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+
+/* --------------------------------------------------
+   MOBILE
+   -------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+  .hero {
+    min-height: 700px;
+    padding: 90px 0 75px;
+  }
+
+  .hero-badge {
+    font-size: 0.78rem;
+  }
+
+  .hero h1 {
+    font-size: 2.55rem;
+  }
+
+  .hero h2 {
+    font-size: 1.25rem;
+  }
+
+  .hero p {
+    font-size: 0.94rem;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr;
+    max-width: 240px;
+  }
+
+  .hero-orb {
+    width: 260px;
+    height: 260px;
+  }
+
+  .world-glow {
+    width: 450px;
+    height: 450px;
+  }
+
+  .world-map img {
+    width: 850px;
+    max-width: none;
+  }
+
+  }
