@@ -1,6 +1,12 @@
 /* ==================================================
-   ECHOES OF HUMANITY — HERO
+   ECHOES OF HUMANITY
+   HERO
    ================================================== */
+
+
+/* --------------------------------------------------
+   HERO BASE
+   -------------------------------------------------- */
 
 .hero {
   position: relative;
@@ -13,35 +19,56 @@
   color: #ffffff;
 }
 
+
+/* --------------------------------------------------
+   HERO CONTENT
+   -------------------------------------------------- */
+
 .hero-content {
   position: relative;
   z-index: 3;
+  width: 100%;
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
 }
 
+
+/* --------------------------------------------------
+   HERO BADGE
+   -------------------------------------------------- */
+
 .hero-badge {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   margin-bottom: 28px;
   padding: 8px 16px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
   font-size: 0.9rem;
+  line-height: 1.3;
 }
 
+
+/* --------------------------------------------------
+   HERO TYPOGRAPHY
+   -------------------------------------------------- */
+
 .hero h1 {
-  margin-bottom: 28px;
+  margin: 0 0 28px;
+  color: #ffffff;
   font-size: clamp(2.8rem, 7vw, 5.8rem);
   line-height: 1.02;
   font-weight: 700;
 }
 
 .hero h2 {
-  margin-bottom: 28px;
+  margin: 0 0 28px;
+  color: #ffffff;
   font-size: clamp(1.35rem, 3vw, 2.2rem);
   line-height: 1.4;
   font-weight: 500;
@@ -50,10 +77,15 @@
 .hero p {
   max-width: 760px;
   margin: 0 auto;
+  color: rgba(255, 255, 255, 0.82);
   font-size: 1.05rem;
   line-height: 1.8;
-  color: rgba(255, 255, 255, 0.82);
 }
+
+
+/* --------------------------------------------------
+   HERO ACTIONS
+   -------------------------------------------------- */
 
 .hero-actions {
   display: flex;
@@ -66,6 +98,11 @@
 .hero .btn {
   min-width: 190px;
 }
+
+
+/* --------------------------------------------------
+   HERO STATS
+   -------------------------------------------------- */
 
 .hero-stats {
   display: grid;
@@ -80,22 +117,26 @@
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.05);
+  text-align: center;
 }
 
 .stat-number {
+  color: #ffffff;
   font-size: 1.25rem;
   font-weight: 700;
+  line-height: 1.3;
 }
 
 .stat-label {
   margin-top: 4px;
+  color: rgba(255, 255, 255, 0.7);
   font-size: 0.82rem;
-  opacity: 0.7;
+  line-height: 1.3;
 }
 
 
 /* --------------------------------------------------
-   WORLD
+   WORLD BACKGROUND
    -------------------------------------------------- */
 
 .hero-world {
@@ -107,10 +148,10 @@
 
 .world-glow {
   position: absolute;
-  width: 620px;
-  height: 620px;
   top: 50%;
   left: 50%;
+  width: 620px;
+  height: 620px;
   transform: translate(-50%, -50%);
   border-radius: 50%;
   background: radial-gradient(
@@ -132,21 +173,22 @@
 
 .world-map img {
   width: min(900px, 90vw);
+  max-width: none;
   filter: brightness(1.4);
 }
 
 
 /* --------------------------------------------------
-   ORB
+   HERO ORB
    -------------------------------------------------- */
 
 .hero-orb {
   position: absolute;
   z-index: 1;
-  width: 360px;
-  height: 360px;
   top: 50%;
   left: 50%;
+  width: 360px;
+  height: 360px;
   transform: translate(-50%, -50%);
   border-radius: 50%;
   background:
@@ -237,53 +279,3 @@
   border-radius: 4px;
   background: rgba(255, 255, 255, 0.75);
 }
-
-
-/* --------------------------------------------------
-   MOBILE
-   -------------------------------------------------- */
-
-@media (max-width: 600px) {
-
-  .hero {
-    min-height: 700px;
-    padding: 90px 0 75px;
-  }
-
-  .hero-badge {
-    font-size: 0.78rem;
-  }
-
-  .hero h1 {
-    font-size: 2.55rem;
-  }
-
-  .hero h2 {
-    font-size: 1.25rem;
-  }
-
-  .hero p {
-    font-size: 0.94rem;
-  }
-
-  .hero-stats {
-    grid-template-columns: 1fr;
-    max-width: 240px;
-  }
-
-  .hero-orb {
-    width: 260px;
-    height: 260px;
-  }
-
-  .world-glow {
-    width: 450px;
-    height: 450px;
-  }
-
-  .world-map img {
-    width: 850px;
-    max-width: none;
-  }
-
-  }
