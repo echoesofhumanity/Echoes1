@@ -1,0 +1,382 @@
+/* ==================================================
+   ECHOES OF HUMANITY
+   MAIN SECTIONS
+   ================================================== */
+
+
+/* --------------------------------------------------
+   GLOBAL SECTION FOUNDATION
+   -------------------------------------------------- */
+
+.features,
+.who-we-are,
+.global-impact,
+.how-you-can-help,
+.featured-projects,
+.humanitarian-action,
+.humanity-response-center,
+.todays-echoes,
+.echoes-in-action,
+.echoes-academy,
+.global-media-network,
+.marketplace,
+.merchandise-design,
+.latest-stories,
+.partners,
+.join-the-movement {
+  padding: 80px 0;
+}
+
+
+/* --------------------------------------------------
+   SECTION TITLES
+   -------------------------------------------------- */
+
+.features h2,
+.who-we-are h2,
+.global-impact h2,
+.how-you-can-help h2,
+.featured-projects h2,
+.humanitarian-action h2,
+.humanity-response-center h2,
+.todays-echoes h2,
+.echoes-in-action h2,
+.echoes-academy h2,
+.global-media-network h2,
+.marketplace h2,
+.merchandise-design h2,
+.latest-stories h2,
+.partners h2,
+.join-the-movement h2 {
+  margin-bottom: 24px;
+  color: #24323a;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.2;
+}
+
+
+/* --------------------------------------------------
+   SECTION PARAGRAPHS
+   -------------------------------------------------- */
+
+.who-we-are p,
+.how-you-can-help > .container > p,
+.humanitarian-action p,
+.humanity-response-center > .container > p,
+.echoes-academy > .container > p,
+.global-media-network > .container > p,
+.marketplace > .container > p,
+.merchandise-design > .container > p,
+.partners > .container > p,
+.join-the-movement > .container > p {
+  max-width: 820px;
+  margin-bottom: 20px;
+  color: #5f6b70;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+
+/* --------------------------------------------------
+   FEATURES
+   -------------------------------------------------- */
+
+.features {
+  background: #ffffff;
+}
+
+.features .section-title {
+  max-width: 760px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.features .section-title h2 {
+  margin-bottom: 14px;
+}
+
+.features .section-title p {
+  color: #5f6b70;
+  font-size: 1.05rem;
+}
+
+
+/* --------------------------------------------------
+   WHO WE ARE
+   -------------------------------------------------- */
+
+.who-we-are {
+  background: #eef3f1;
+}
+
+.who-we-are .container {
+  max-width: 900px;
+}
+
+
+/* --------------------------------------------------
+   GLOBAL IMPACT
+   -------------------------------------------------- */
+
+.global-impact {
+  background: #ffffff;
+}
+
+.global-impact h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+/* --------------------------------------------------
+   HOW YOU CAN HELP
+   -------------------------------------------------- */
+
+.how-you-can-help {
+  background: #f7f4ef;
+}
+
+.how-you-can-help h2 {
+  text-align: center;
+}
+
+.how-you-can-help > .container > p {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
+/* --------------------------------------------------
+   FEATURED PROJECTS
+   -------------------------------------------------- */
+
+.featured-projects {
+  background: #ffffff;
+}
+
+.featured-projects h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+/* --------------------------------------------------
+   HUMANITARIAN ACTION
+   -------------------------------------------------- */
+
+.humanitarian-action {
+  background: #eef3f1;
+}
+
+.humanitarian-action .container {
+  max-width: 900px;
+}
+
+
+/* --------------------------------------------------
+   HUMANITY RESPONSE CENTER
+   -------------------------------------------------- */
+
+.humanity-response-center {
+  background: #ffffff;
+}
+
+.humanity-response-center h2 {
+  text-align: center;
+}
+
+.humanity-response-center > .container > p {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+/* --------------------------------------------------
+   TODAY'S ECHOES
+   -------------------------------------------------- */
+
+.todays-echoes {
+  background: #f7f4ef;
+}
+
+.todays-echoes h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+/* --------------------------------------------------
+   ECHOES IN ACTION
+   -------------------------------------------------- */
+
+.echoes-in-action {
+  background: #ffffff;
+}
+
+.echoes-in-action h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+/* --------------------------------------------------
+   ECHOES ACADEMY
+   -------------------------------------------------- */
+
+.echoes-academy {
+  background: #eef3f1;
+}
+
+.echoes-academy h2 {
+  text-align: center;
+}
+
+.echoes-academy > .container > p {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+/* --------------------------------------------------
+   GLOBAL MEDIA NETWORK
+   -------------------------------------------------- */
+
+.global-media-network {
+  background: #ffffff;
+}
+
+.global-media-network h2 {
+  text-align: center;
+}
+
+.global-media-network > .container > p {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.global-media-network > .container > .btn {
+  display: block;
+  width: fit-content;
+  margin: 40px auto 0;
+}
+
+
+/* --------------------------------------------------
+   MARKETPLACE
+   -------------------------------------------------- */
+
+.marketplace {
+  background: #f7f4ef;
+  text-align: center;
+}
+
+.marketplace .container {
+  max-width: 800px;
+}
+
+.marketplace h2 {
+  margin-bottom: 16px;
+}
+
+.marketplace > .container > p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* --------------------------------------------------
+   MERCHANDISE
+   -------------------------------------------------- */
+
+.merchandise-design {
+  background: #ffffff;
+  text-align: center;
+}
+
+.merchandise-design .container {
+  max-width: 800px;
+}
+
+.merchandise-design h2 {
+  margin-bottom: 16px;
+}
+
+.merchandise-design > .container > p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* --------------------------------------------------
+   LATEST STORIES
+   -------------------------------------------------- */
+
+.latest-stories {
+  background: #f7f4ef;
+}
+
+.latest-stories h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+/* --------------------------------------------------
+   PARTNERS
+   -------------------------------------------------- */
+
+.partners {
+  background: #ffffff;
+}
+
+.partners h2 {
+  text-align: center;
+}
+
+.partners > .container > p {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+/* --------------------------------------------------
+   JOIN THE MOVEMENT
+   -------------------------------------------------- */
+
+.join-the-movement {
+  background:
+    linear-gradient(
+      135deg,
+      #071218 0%,
+      #10262e 100%
+    );
+  color: #ffffff;
+  text-align: center;
+}
+
+.join-the-movement h2 {
+  color: #ffffff;
+}
+
+.join-the-movement > .container {
+  max-width: 850px;
+}
+
+.join-the-movement > .container > p {
+  margin-left: auto;
+  margin-right: auto;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.join-the-movement .btn {
+  margin-top: 20px;
+}
