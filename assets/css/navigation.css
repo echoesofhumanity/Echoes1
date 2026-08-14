@@ -295,9 +295,8 @@
     .site-nav {
         display: none;
     }
-
-    .mobile-nav {
-        display: block;
-        width: 100%;
-    }
+.mobile-nav {
+    display: block;
+    width: 100%;
+}
 }
