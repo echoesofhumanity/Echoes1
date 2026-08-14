@@ -261,20 +261,16 @@
     cursor: pointer;
 }
 
-.menu-items {
-    display: none;
-    flex-direction: column;
-    gap: 12px;
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 70px;
     left: 0;
     width: 100%;
+    height: calc(100vh - 70px);
     background-color: #ffffff;
     padding: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
     z-index: 1000;
     box-sizing: border-box;
-}
+    overflow-y: auto;
 
 
 .menu-items.active {
