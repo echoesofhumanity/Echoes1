@@ -273,11 +273,21 @@
 }
 
 .menu-items a {
-    color: #ffffff;
+    display: block;
+
+    color: #24323a;
+
+    background: #ffffff;
+
     text-decoration: none;
+
     text-align: center;
-    padding: 10px;
+
+    padding: 14px;
+
     border-radius: 10px;
+
+    margin-bottom: 8px;
 }
 
 @media (max-width: 768px) {
