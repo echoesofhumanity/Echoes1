@@ -244,3 +244,63 @@
         transform: translateY(0);
     }
 }
+/* =========================================
+   MOBILE HAMBURGER MENU
+========================================= */
+
+.mobile-nav {
+    display: none;
+}
+
+.menu-button {
+    width: 100%;
+    padding: 12px;
+
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 14px;
+
+    background: rgba(15,23,42,0.85);
+
+    color: #ffffff;
+    font-size: 1rem;
+
+    cursor: pointer;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+
+    margin-top: 14px;
+}
+
+.menu-items a {
+    color: #ffffff;
+    text-decoration: none;
+
+    text-align: center;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+    transition: all 0.4s ease;
+}
+
+.menu-items a:hover {
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+
+    .site-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+        width: 100%;
+    }
+}
