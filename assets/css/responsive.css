@@ -62,33 +62,17 @@
 
 @media (max-width: 760px) {
 
-  .site-header .container {
-    min-height: auto;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    flex-direction: column;
-    align-items: center;
-    gap: 14px;
-  }
-
-  .site-logo a {
-    font-size: 1.2rem;
-  }
-
   .site-nav {
-    width: 100%;
-    justify-content: center;
-    gap: 6px 14px;
+    display: none !important;
   }
 
-  .site-nav a {
-    font-size: 0.82rem;
-    padding: 5px 0;
+  .mobile-nav {
+    display: block !important;
   }
 
 }
 
-
+  
 /* --------------------------------------------------
    MOBILE
    -------------------------------------------------- */
