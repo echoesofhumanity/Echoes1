@@ -251,31 +251,36 @@
 }
 
 .menu-button {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid rgba(255,255,255,0.15);
-    border-radius: 14px;
-    background: rgba(15,23,42,0.85);
-    color: #ffffff;
-    font-size: 1rem;
-    cursor: pointer;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 14px;
+  background: rgba(15, 23, 42, 0.85);
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
-    position: fixed;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    height: calc(100vh - 70px);
-    background-color: #ffffff;
-    padding: 20px;
-    z-index: 1000;
-    box-sizing: border-box;
-    overflow-y: auto;
-
+/* Doğru yerleşim: Sabit ekranı kaplayan alan .menu-items olmalı */
+.menu-items {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 70px);
+  background-color: #ffffff;
+  padding: 20px;
+  z-index: 1000;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
 
 .menu-items.active {
-    display: flex;
+  display: flex;
 }
+
 
 .menu-items a {
     display: block;
