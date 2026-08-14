@@ -261,22 +261,13 @@
   cursor: pointer;
 }
 
-/* Doğru yerleşim: Sabit ekranı kaplayan alan .menu-items olmalı */
-.menu-items {
-  display: none;
-  flex-direction: column;
-  position: fixed;
-  top: 70px;
-  left: 0;
-  width: 100%;
-  height: calc(100vh - 70px);
-  background-color: #ffffff;
-  padding: 20px;
-  z-index: 1000;
-  box-sizing: border-box;
-  overflow-y: auto;
-}
-
+263. .menu-items {
+264.     display: none;
+265.     flex-direction: column;
+266.     gap: 12px;
+267.     margin-top: 14px;
+268. }
+   
 .menu-items.active {
   display: flex;
 }
