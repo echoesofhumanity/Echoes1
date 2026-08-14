@@ -311,3 +311,18 @@
         display: none;
     }
    }
+@media (max-width: 768px) {
+
+    .site-nav {
+        display: none !important;
+    }
+
+    .site-header .container {
+        display: block;
+    }
+
+    .site-logo {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}
