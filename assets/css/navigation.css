@@ -321,14 +321,6 @@
 }
 
 
-@media (min-width: 769px) {
-
-    .mobile-nav {
-        display: none;
-    }
-}
-
-
 @media (max-width: 768px) {
 
     .site-nav {
