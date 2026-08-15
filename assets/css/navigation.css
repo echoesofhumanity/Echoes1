@@ -279,21 +279,19 @@
 
     cursor: pointer;
 }
-
 .menu-items {
-    display: none !important;
-
+    display: none;
     position: absolute;
-
+    top: 50px;
     right: 0;
-
-    top: 52px;
 
     width: 220px;
 
-    margin-top: 0;
+    flex-direction: column;
 
     background: #ffffff;
+
+    border: 1px solid #e1e7e5;
 
     border-radius: 12px;
 
@@ -303,28 +301,25 @@
 }
 
 .menu-items.active {
-    display: flex !important;
-
-    flex-direction: column;
+    display: flex;
 }
 
 .menu-items a {
     display: block;
 
+    width: 100%;
+
     padding: 12px;
 
     margin: 2px 0;
 
-    background: transparent;
-
-    border-radius: 8px;
-
     text-align: left;
 
-    color: #24323a;
-
     font-size: 0.9rem;
+
+    border-radius: 8px;
 }
+
 
 @media (min-width: 769px) {
 
