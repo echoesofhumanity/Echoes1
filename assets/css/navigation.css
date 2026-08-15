@@ -276,11 +276,11 @@
 
     position: fixed;
 
-    top: 90px;
+    top: 105px;
 
-    left: 15px;
+    left: 12px;
 
-    width: 260px;
+    width: 190px;
 
     z-index: 9999;
 
@@ -290,11 +290,11 @@
 
     border: 1px solid #e1e7e5;
 
-    border-radius: 20px;
+    border-radius: 24px;
 
-    padding: 20px;
+    padding: 18px;
 
-    max-height: 70vh;
+    max-height: 75vh;
 
     overflow-y: auto;
 
@@ -309,17 +309,16 @@
 
     width: 100%;
 
-    padding: 12px;
+    padding: 10px 12px;
 
     margin: 2px 0;
 
     text-align: left;
 
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 
     border-radius: 8px;
 }
-
 
 @media (max-width: 768px) {
 
@@ -366,14 +365,12 @@
         border-radius: 0;
     }
 
-
-   
 .menu-group-title {
-    margin-top: 20px;
+    margin-top: 18px;
 
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 
-    font-size: 0.85rem;
+    font-size: 0.8rem;
 
     font-weight: 700;
 
