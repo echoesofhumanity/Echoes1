@@ -328,7 +328,7 @@
 
     .site-header .container {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
     }
 
@@ -340,13 +340,13 @@
         font-size: 1rem;
     }
 
-    .mobile-nav {
-        width: auto;
-    }
+.mobile-nav {
+    margin-left: auto;
+}
 
-    .mobile-menu-wrapper {
-        width: auto;
-    }
+.mobile-menu-wrapper {
+    position: relative;
+}
 
     .menu-button {
         width: 42px;
@@ -384,8 +384,8 @@
 }
 
 .header-logo {
-    width: 70px;
-    height: 70px;
+    width: 55px;
+    height: 55px;
     object-fit: contain;
     flex-shrink: 0;
 }
