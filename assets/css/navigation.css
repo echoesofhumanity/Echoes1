@@ -406,7 +406,8 @@ padding: 40px 30px;
 
     left: 0;
 
-    width: 100vw;
+    width: 100%;
+   max-width: 100%;
 
     height: calc(100vh - 90px);
 
