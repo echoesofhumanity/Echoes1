@@ -172,9 +172,13 @@
 }
 
 .world-map img {
-  width: min(900px, 90vw);
-  max-width: none;
-  filter: brightness(1.4);
+    width: 90vw;
+
+    max-width: 100%;
+
+    height: auto;
+
+    filter: brightness(1.4);
 }
 
 
@@ -278,4 +282,39 @@
   transform: translateX(-50%);
   border-radius: 4px;
   background: rgba(255, 255, 255, 0.75);
+}
+
+@media (max-width: 768px) {
+
+    body,
+    html {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 120px 0 60px;
+        overflow: hidden;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .world-map {
+        overflow: hidden;
+    }
+
+    .world-map img {
+        width: 100%;
+        max-width: 100%;
+        transform: none;
+    }
+
+    .hero-orb {
+        width: 220px;
+        height: 220px;
+    }
 }
