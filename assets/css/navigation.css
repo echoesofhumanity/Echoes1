@@ -49,15 +49,15 @@
     object-fit: contain;
 
     filter:
-        drop-shadow(0 0 8px rgba(180, 220, 255, 0.25))
-        drop-shadow(0 0 18px rgba(180, 220, 255, 0.15));
+    drop-shadow(0 0 12px rgba(180, 220, 255, 0.35))
+    drop-shadow(0 0 24px rgba(180, 220, 255, 0.2));
 }
 .site-logo {
     display: flex;
 
     align-items: center;
 
-    gap: 12px;
+    gap: 8px;
 }
 
 .site-title {
