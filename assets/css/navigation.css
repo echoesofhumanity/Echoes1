@@ -234,4 +234,83 @@
     .menu-group-title {
         display: none;
     }
+   /* LANGUAGE GLOBE */
+
+.language-globe {
+
+display: flex;
+
+justify-content: center;
+
+position: relative;
+
+padding-bottom: 18px;
+
+}
+
+.language-button {
+
+width: 52px;
+
+height: 52px;
+
+border: 0;
+
+border-radius: 50%;
+
+background: rgba(255,255,255,0.08);
+
+color: white;
+
+font-size: 28px;
+
+cursor: pointer;
+
+}
+
+.language-dropdown {
+
+display: none;
+
+position: absolute;
+
+top: 60px;
+
+left: 50%;
+
+transform: translateX(-50%);
+
+background: rgba(20,25,40,0.95);
+
+border-radius: 16px;
+
+padding: 12px;
+
+min-width: 120px;
+
+backdrop-filter: blur(12px);
+
+}
+
+.language-dropdown a {
+
+display: block;
+
+padding: 10px;
+
+text-decoration: none;
+
+color: white;
+
+font-size: 16px;
+
+text-align: center;
+
+}
+
+.language-globe:hover .language-dropdown {
+
+display: block;
+
+
 }
