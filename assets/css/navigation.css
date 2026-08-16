@@ -22,7 +22,7 @@
 /* CONTAINER */
 
 .site-header .container {
-    min-height: 80px;
+    min-height: 72px;
 
     display: flex;
 
