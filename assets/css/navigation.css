@@ -329,54 +329,42 @@ padding: 40px 30px;
 
     .site-header .container {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
+.site-header .container {
+    display: flex;
 
-    .site-logo {
-        margin: 0;
-    }
+    align-items: center;
 
-    .site-logo a {
-        font-size: 1rem;
-    }
+    justify-content: space-between;
+}
 
-    .mobile-nav {
-        margin-left: auto;
-    }
+.site-logo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin: 0;
+}
+
+.header-logo {
+    width: 52px;
+
+    height: 52px;
+
+    object-fit: contain;
+}
+
+.site-title {
+    display: none;
+}
+
+.mobile-nav {
+    margin-left: auto;
+}
 
 .mobile-menu-wrapper {
     position: relative;
-}
-
-    .menu-button {
-        width: 42px;
-        height: 42px;
-
-        padding: 0;
-
-        background: transparent;
-
-        color: #24323a;
-
-        font-size: 28px;
-
-        border: 0;
-
-        border-radius: 0;
-    }
-
-
-
-.site-logo a {
-    font-size: 1.8rem;
-
-    font-weight: 800;
-
-    letter-spacing: -1px;
-
-    color: #ffffff;
 }
 
 .site-header {
