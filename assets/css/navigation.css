@@ -60,6 +60,16 @@
     display: block;
 
     color: #ffffff;
+   background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #eef6ff 45%,
+    #cfe7ff 100%
+);
+
+-webkit-background-clip: text;
+
+-webkit-text-fill-color: transparent;
 
     font-size: 1.15rem;
 
@@ -73,9 +83,11 @@
 
     margin-left: 6px;
 
-    text-shadow: 0 2px 12px rgba(255, 255, 255, 0.12);
+    text-shadow:
+    0 0 18px rgba(180, 220, 255, 0.35),
+    0 0 36px rgba(180, 220, 255, 0.2);
 }
-
+   
 /* DESKTOP MENU */
 
 .site-nav {
