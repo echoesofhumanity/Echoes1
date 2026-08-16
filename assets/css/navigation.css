@@ -154,22 +154,26 @@
     }
 
     .menu-button {
-        width: 60px;
+    width: 56px;
 
-        height: 60px;
+    height: 56px;
 
-        border: 0;
+    border: 1px solid rgba(255, 255, 255, 0.08);
 
-        border-radius: 16px;
+    border-radius: 18px;
 
-        background: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.05);
 
-        color: white;
+    backdrop-filter: blur(12px);
 
-        font-size: 32px;
+    color: white;
 
-        cursor: pointer;
-    }
+    font-size: 30px;
+
+    cursor: pointer;
+
+    box-shadow: 0 0 20px rgba(120, 180, 255, 0.12);
+}
 
     .menu-items {
         position: fixed;
