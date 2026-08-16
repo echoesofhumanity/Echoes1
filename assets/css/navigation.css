@@ -208,7 +208,7 @@
 .site-logo {
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 12px;
 }
 
 
@@ -337,7 +337,7 @@
     }
 
     .site-logo a {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .mobile-nav {
@@ -384,18 +384,10 @@
 }
 
 .header-logo {
-    width: 60px;
-
-    height: 60px;
-
-    object-fit: contain;
-
-    flex-shrink: 0;
-}
-}
-.logo-image {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     object-fit: contain;
     flex-shrink: 0;
 }
+}
+
