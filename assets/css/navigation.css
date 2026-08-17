@@ -238,19 +238,13 @@
 
 .language-globe {
 
-display: flex;
-
-justify-content: flex-end;
-
 position: absolute;
 
-right: 120px;
+top: 12px;
 
 right: 95px;
 
-top: -8px;
-
-padding-bottom: 8px;
+z-index: 999;
 
 }
 .language-button {
