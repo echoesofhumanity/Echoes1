@@ -244,9 +244,11 @@ justify-content: flex-end;
 
 position: absolute;
 
-right: 90px;
+right: 95px;
 
-top: 20px;
+right: 95px;
+
+top: -8px;
 
 padding-bottom: 8px;
 
