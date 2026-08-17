@@ -170,6 +170,8 @@
     cursor: pointer;
 
     box-shadow: none;
+       
+   animation: menuBreathing 3s ease-in-out infinite;    
 
     }
 
@@ -342,4 +344,24 @@ display: block;
     }
 
 }
-   
+  @keyframes menuBreathing {
+
+    0% {
+
+        transform: scale(1);
+
+    }
+
+    50% {
+
+        transform: scale(1.08);
+
+    }
+
+    100% {
+
+        transform: scale(1);
+
+    }
+
+  } 
