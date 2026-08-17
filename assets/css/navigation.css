@@ -243,6 +243,11 @@ top: 22px;
 right: 65px;
 
 z-index: 999;
+.language-globe {
+
+    animation: globeBreathing 3s ease-in-out infinite;
+
+}   
 
 }
 .language-button {
