@@ -301,7 +301,8 @@ color: white;
 font-size: 16px;
 
 text-align: center;
-
+   
+animation: flagFade 2.5s ease-in-out infinite;
 }
 
 .language-globe:hover .language-dropdown {
@@ -325,4 +326,20 @@ display: block;
     }
 
    }
+   
+@keyframes flagFade {
+
+    0% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.4;
+    }
+
+}
    
