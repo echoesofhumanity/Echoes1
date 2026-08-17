@@ -232,9 +232,10 @@
 
        opacity: 0;
 
+animation: menuItemFade 0.5s ease forwards;
+
 transform: translateY(-20px);
 
-animation: menuItemFade 0.5s ease forwards;
     }
 
    .menu-items a:nth-child(1) {
