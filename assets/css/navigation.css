@@ -243,13 +243,9 @@ top: 22px;
 right: 65px;
 
 z-index: 999;
-.language-globe {
-
-    animation: globeBreathing 3s ease-in-out infinite;
 
 }   
 
-}
 .language-button {
 
 width: 40px;
@@ -264,7 +260,7 @@ background: rgba(255,255,255,0.08);
 color: white;
 
 cursor: pointer;
-animation: globeBreathing 3s infinite ease-in-out;   
+ animation: globeBreathing 3s infinite ease-in-out;
 
 }
 
