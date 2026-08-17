@@ -259,6 +259,7 @@ background: rgba(255,255,255,0.08);
 color: white;
 
 cursor: pointer;
+animation: globeBreathing 3s infinite ease-in-out;   
 
 }
 
@@ -308,3 +309,19 @@ display: block;
 
 
 }
+@keyframes globeBreathing {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+   }
+   
