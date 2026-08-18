@@ -167,12 +167,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0.18;
+    opacity: 0.28;
     z-index: 1;
 }
 
 .world-map img {
-    width: 100%;
+    width: 85%;
     max-width: 900px;
     height: auto;
 
