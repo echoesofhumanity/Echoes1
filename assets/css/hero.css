@@ -162,24 +162,41 @@
 }
 
 .world-map {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0.13;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.18;
+    z-index: 1;
 }
 
 .world-map img {
-    width: 90vw;
-
-    max-width: 100%;
-
+    width: 100%;
+    max-width: 900px;
     height: auto;
 
-    filter: brightness(1.4);
+    filter:
+        brightness(1.4)
+        drop-shadow(0 0 20px rgba(90, 180, 255, 0.3));
+
+    animation: worldPulse 8s ease-in-out infinite;
 }
 
+@keyframes worldPulse {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.03);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
 
 /* --------------------------------------------------
    HERO ORB
