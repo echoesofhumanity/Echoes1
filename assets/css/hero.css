@@ -175,16 +175,17 @@
 }
 
 .world-map img {
-    width: 68%;
-    max-width: 520px;
-
+    width: 75%;
+    max-width: 380px;
     height: auto;
 
     filter:
-        brightness(4)
+        brightness(6)
         invert(1);
 
-    opacity: 0.3;
+    opacity: 0.18;
+
+    transform: translateY(-30px);
 }
 
 @keyframes worldPulse {
