@@ -294,7 +294,7 @@ height: 520px;
 
     .hero {
         min-height: auto;
-        padding: 80px 0 60px;
+        padding: 40px 0 60px;
         overflow: hidden;
     }
 
@@ -318,8 +318,8 @@ height: 520px;
     }
 
     .hero-orb {
-    width: 220px;
-    height: 220px;
+    width: 180px;
+    height: 180px;
 }
 
 .hero-actions {
@@ -341,8 +341,11 @@ height: 520px;
 }
 
 .hero p {
-    max-width: 100%;
-    font-size: 1.15rem;
+    max-width: 95%;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.8;
+}
 
     }
 }
