@@ -294,7 +294,7 @@ height: 520px;
 
 .hero {
     min-height: auto;
-    padding: 20px 0 40px;
+    padding: 0;
     overflow: hidden;
 }
 
@@ -348,9 +348,9 @@ height: 520px;
 
 .hero p {
     max-width: 85%;
-    margin: 0 auto;
-    font-size: 0.95rem;
-    line-height: 1.8;
+    margin: 20px auto;
+    font-size: 0.9rem;
+    line-height: 1.6;
 }
     }
 }
