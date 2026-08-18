@@ -293,9 +293,9 @@ height: 520px;
     }
 
     .hero {
-        min-height: auto;
-        padding: 40px 0 60px;
-        overflow: hidden;
+    min-height: auto;
+    padding: 10px 0 40px;
+    overflow: hidden;
     }
 
     .hero-content {
@@ -306,6 +306,10 @@ height: 520px;
     align-items: center;
     text-align: center;
     }
+   .hero h1 {
+    font-size: 3.2rem;
+    line-height: 1.1;
+   }
 
     .world-map {
         overflow: hidden;
