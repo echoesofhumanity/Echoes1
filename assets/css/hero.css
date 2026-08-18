@@ -323,8 +323,8 @@ height: 520px;
     }
 
 .hero-orb {
-    width: 320px;
-    height: 320px;
+    width: 240px;
+    height: 240px;
     top: 55%;
 }
 
@@ -348,9 +348,9 @@ height: 520px;
 
 .hero p {
     max-width: 90%;
+    margin: 0 auto;
     font-size: 0.95rem;
-    line-height: 1.7;
+    line-height: 1.9;
 }
-
     }
 }
