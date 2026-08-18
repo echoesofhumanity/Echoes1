@@ -172,15 +172,15 @@
 }
 
 .world-map img {
-    width: 85%;
-    max-width: 900px;
+    width: 100%;
+    max-width: 1200px;
     height: auto;
 
     filter:
-        brightness(1.4)
-        drop-shadow(0 0 20px rgba(90, 180, 255, 0.3));
+        brightness(12)
+        invert(1);
 
-    animation: worldPulse 8s ease-in-out infinite;
+    opacity: 0.9;
 }
 
 @keyframes worldPulse {
