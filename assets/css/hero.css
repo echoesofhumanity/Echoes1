@@ -37,26 +37,73 @@
 /* LIGHT */
 /* CINEMATIC RINGS */
 
-.hero-rings {
+/* CINEMATIC GLOBE */
+
+/* CINEMATIC WORLD MAP */
+
+.hero-globe {
     position: absolute;
 
-    top: 50%;
+    top: -220px;
     left: 50%;
 
-    width: 480px;
-    height: 480px;
+    width: 1200px;
+    height: 700px;
 
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
 
     border-radius: 50%;
 
-    border: 1px solid rgba(120, 190, 210, 0.08);
+    background:
+        radial-gradient(
+            ellipse at center,
+            rgba(45, 120, 220, 0.35) 0%,
+            rgba(20, 60, 120, 0.22) 45%,
+            rgba(0, 0, 0, 0) 75%
+        );
+
+    border: 1px solid rgba(120, 190, 255, 0.12);
 
     box-shadow:
-        0 0 0 80px rgba(120, 190, 210, 0.03),
-        0 0 0 160px rgba(120, 190, 210, 0.02);
+        0 0 120px rgba(70, 150, 255, 0.18),
+        0 0 220px rgba(70, 150, 255, 0.08);
 
-    animation: ringsPulse 14s ease-in-out infinite;
+    animation: breathingEarth 12s ease-in-out infinite;
+}
+
+/* LIGHT ORBITS */
+
+.hero-orbit {
+    position: absolute;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(120, 190, 255, 0.08);
+}
+
+.orbit-1 {
+    top: -110px;
+
+    width: 900px;
+    height: 900px;
+}
+
+.orbit-2 {
+    top: -160px;
+
+    width: 1050px;
+    height: 1050px;
+}
+
+.orbit-3 {
+    top: -210px;
+
+    width: 1200px;
+    height: 1200px;
 }
 
 .hero-light {
@@ -65,8 +112,8 @@
     top: 50%;
     left: 50%;
 
-    width: 700px;
-    height: 700px;
+    width: 800px;
+    height: 800px;
 
     transform: translate(-50%, -50%);
 
@@ -75,12 +122,12 @@
     background:
         radial-gradient(
             circle,
-            rgba(255, 255, 255, 0.16) 0%,
+            rgba(255, 255, 255, 0.12) 0%,
             rgba(92, 180, 194, 0.08) 40%,
             transparent 75%
         );
 
-    filter: blur(20px);
+    filter: blur(30px);
 }
 
 /* CONTENT */
