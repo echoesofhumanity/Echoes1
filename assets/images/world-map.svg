@@ -1,109 +1,126 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 800">
 
 <style>
+
 .continent{
 fill:none;
-stroke:#6fbcff;
-stroke-width:3;
+stroke:#5fbcff;
+stroke-width:4;
 stroke-linecap:round;
 stroke-linejoin:round;
-opacity:.8;
+opacity:.9;
+}
+
+.connection{
+fill:none;
+stroke:#7dd3ff;
+stroke-width:2;
+opacity:.45;
 }
 
 .node{
 fill:#8fd3ff;
 }
 
-.connection{
-fill:none;
-stroke:#6fbcff;
-stroke-width:2;
-opacity:.5;
-}
 </style>
 
-<g class="continent">
+<!-- NORTH AMERICA -->
 
-<!-- North America -->
-<path d="M170 220
-L230 180
-L330 160
-L420 180
-L470 220
-L440 280
-L360 320
-L270 310
-L200 270
+<path class="continent"
+d="M170 220
+L250 180
+L350 190
+L430 230
+L470 300
+L420 340
+L320 320
+L240 280
 Z"/>
 
-<!-- South America -->
-<path d="M380 360
-L430 420
-L450 500
-L420 620
-L380 690
-L340 610
-L330 520
-L350 430
+<!-- SOUTH AMERICA -->
+
+<path class="continent"
+d="M360 380
+L430 430
+L470 540
+L430 690
+L360 740
+L310 620
+L310 470
 Z"/>
 
-<!-- Europe -->
-<path d="M700 210
-L760 190
-L830 210
-L850 250
-L790 270
-L720 250
+<!-- EUROPE -->
+
+<path class="continent"
+d="M700 220
+L770 190
+L850 220
+L880 260
+L820 290
+L740 280
 Z"/>
 
-<!-- Africa -->
-<path d="M760 300
-L840 340
-L880 450
-L850 580
-L770 620
-L720 520
-L720 380
+<!-- AFRICA -->
+
+<path class="continent"
+d="M760 320
+L840 360
+L900 520
+L860 700
+L760 650
+L700 500
+L700 400
 Z"/>
 
-<!-- Asia -->
-<path d="M880 180
-L1040 150
-L1260 180
-L1380 260
-L1320 340
-L1140 350
-L980 300
-L900 240
+<!-- ASIA -->
+
+<path class="continent"
+d="M900 180
+L1050 150
+L1250 180
+L1400 260
+L1360 360
+L1180 390
+L1020 340
+L930 260
 Z"/>
 
-<!-- Australia -->
-<path d="M1260 520
-L1360 500
-L1420 560
-L1380 620
-L1280 600
+<!-- AUSTRALIA -->
+
+<path class="continent"
+d="M1260 560
+L1360 540
+L1440 590
+L1390 650
+L1290 640
 Z"/>
 
-</g>
+<!-- CONNECTIONS -->
 
-<g class="connection">
+<path class="connection"
+d="M430 250 Q760 120 1050 220"/>
 
-<path d="M320 220 Q560 120 780 220"/>
-<path d="M780 220 Q1040 120 1240 250"/>
-<path d="M820 320 Q1020 420 1340 560"/>
-<path d="M300 260 Q500 420 780 420"/>
+<path class="connection"
+d="M420 270 Q800 380 1290 590"/>
 
-</g>
+<path class="connection"
+d="M780 250 Q1040 320 1320 250"/>
 
-<g class="node">
+<path class="connection"
+d="M820 390 Q980 300 1220 240"/>
 
-<circle cx="320" cy="220" r="8"/>
-<circle cx="780" cy="220" r="8"/>
-<circle cx="1240" cy="250" r="8"/>
-<circle cx="820" cy="320" r="8"/>
-<circle cx="1340" cy="560" r="8"/>
+<!-- NODES -->
 
-</g>
+<circle class="node" cx="430" cy="250" r="10"/>
+
+<circle class="node" cx="780" cy="250" r="10"/>
+
+<circle class="node" cx="820" cy="390" r="10"/>
+
+<circle class="node" cx="1220" cy="240" r="10"/>
+
+<circle class="node" cx="1320" cy="250" r="10"/>
+
+<circle class="node" cx="1290" cy="590" r="10"/>
 
 </svg>
