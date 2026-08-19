@@ -57,6 +57,29 @@
 }
 
 /* LIGHT */
+/* CINEMATIC RINGS */
+
+.hero-rings {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    width: 620px;
+    height: 620px;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(120, 190, 210, 0.08);
+
+    box-shadow:
+        0 0 0 80px rgba(120, 190, 210, 0.03),
+        0 0 0 160px rgba(120, 190, 210, 0.02);
+
+    animation: ringsPulse 14s ease-in-out infinite;
+}
 
 .hero-light {
     position: absolute;
