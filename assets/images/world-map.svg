@@ -1,31 +1,108 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 800">
 
-<g fill="none"
-   stroke="rgba(120,190,255,0.65)"
-   stroke-width="2">
+<style>
+.continent{
+fill:none;
+stroke:#6fbcff;
+stroke-width:3;
+stroke-linecap:round;
+stroke-linejoin:round;
+opacity:.8;
+}
 
-<path d="M210 250 L320 180 L430 210 L520 190 L650 230"/>
-<path d="M620 240 L720 190 L850 170 L980 210 L1120 220"/>
-<path d="M1080 250 L1210 220 L1320 260 L1450 310"/>
+.node{
+fill:#8fd3ff;
+}
 
-<path d="M300 340 L370 300 L420 360 L390 450 L320 520"/>
-<path d="M720 320 L840 290 L950 320 L1020 420 L960 520"/>
-<path d="M1280 520 L1370 480 L1460 560 L1420 650 L1320 630"/>
+.connection{
+fill:none;
+stroke:#6fbcff;
+stroke-width:2;
+opacity:.5;
+}
+</style>
+
+<g class="continent">
+
+<!-- North America -->
+<path d="M170 220
+L230 180
+L330 160
+L420 180
+L470 220
+L440 280
+L360 320
+L270 310
+L200 270
+Z"/>
+
+<!-- South America -->
+<path d="M380 360
+L430 420
+L450 500
+L420 620
+L380 690
+L340 610
+L330 520
+L350 430
+Z"/>
+
+<!-- Europe -->
+<path d="M700 210
+L760 190
+L830 210
+L850 250
+L790 270
+L720 250
+Z"/>
+
+<!-- Africa -->
+<path d="M760 300
+L840 340
+L880 450
+L850 580
+L770 620
+L720 520
+L720 380
+Z"/>
+
+<!-- Asia -->
+<path d="M880 180
+L1040 150
+L1260 180
+L1380 260
+L1320 340
+L1140 350
+L980 300
+L900 240
+Z"/>
+
+<!-- Australia -->
+<path d="M1260 520
+L1360 500
+L1420 560
+L1380 620
+L1280 600
+Z"/>
 
 </g>
 
-<g fill="#7ec8ff">
+<g class="connection">
 
-<circle cx="320" cy="180" r="4"/>
-<circle cx="720" cy="190" r="4"/>
-<circle cx="980" cy="210" r="4"/>
-<circle cx="1210" cy="220" r="4"/>
-<circle cx="1450" cy="310" r="4"/>
+<path d="M320 220 Q560 120 780 220"/>
+<path d="M780 220 Q1040 120 1240 250"/>
+<path d="M820 320 Q1020 420 1340 560"/>
+<path d="M300 260 Q500 420 780 420"/>
 
-<circle cx="370" cy="300" r="4"/>
-<circle cx="840" cy="290" r="4"/>
-<circle cx="1020" cy="420" r="4"/>
-<circle cx="1370" cy="480" r="4"/>
+</g>
+
+<g class="node">
+
+<circle cx="320" cy="220" r="8"/>
+<circle cx="780" cy="220" r="8"/>
+<circle cx="1240" cy="250" r="8"/>
+<circle cx="820" cy="320" r="8"/>
+<circle cx="1340" cy="560" r="8"/>
 
 </g>
 
