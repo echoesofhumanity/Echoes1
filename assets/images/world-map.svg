@@ -1,3 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="0 0 1600 800">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 800">
+
+<g fill="none"
+   stroke="rgba(120,190,255,0.65)"
+   stroke-width="2">
+
+<path d="M210 250 L320 180 L430 210 L520 190 L650 230"/>
+<path d="M620 240 L720 190 L850 170 L980 210 L1120 220"/>
+<path d="M1080 250 L1210 220 L1320 260 L1450 310"/>
+
+<path d="M300 340 L370 300 L420 360 L390 450 L320 520"/>
+<path d="M720 320 L840 290 L950 320 L1020 420 L960 520"/>
+<path d="M1280 520 L1370 480 L1460 560 L1420 650 L1320 630"/>
+
+</g>
+
+<g fill="#7ec8ff">
+
+<circle cx="320" cy="180" r="4"/>
+<circle cx="720" cy="190" r="4"/>
+<circle cx="980" cy="210" r="4"/>
+<circle cx="1210" cy="220" r="4"/>
+<circle cx="1450" cy="310" r="4"/>
+
+<circle cx="370" cy="300" r="4"/>
+<circle cx="840" cy="290" r="4"/>
+<circle cx="1020" cy="420" r="4"/>
+<circle cx="1370" cy="480" r="4"/>
+
+</g>
+
 </svg>
