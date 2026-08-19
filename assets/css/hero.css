@@ -175,8 +175,8 @@
 }
 
 .world-map img {
-    width: 65%;
-    max-width: 350px;
+    width: 160%;
+    max-width: none;
     height: auto;
 }
 @keyframes worldPulse {
