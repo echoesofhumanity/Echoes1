@@ -57,11 +57,12 @@
     background-position: center;
     background-size: contain;
 
-    opacity: 0.18;
+    opacity: 0.08;
 
     filter:
-        drop-shadow(0 0 40px rgba(120, 190, 255, 0.8))
-drop-shadow(0 0 120px rgba(120, 190, 255, 0.5));
+    blur(1px)
+    drop-shadow(0 0 30px rgba(120, 190, 255, 0.4));
+        
     animation: breathingEarth 12s ease-in-out infinite;
 }
 
