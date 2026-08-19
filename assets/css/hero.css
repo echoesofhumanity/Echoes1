@@ -51,10 +51,12 @@
     background-position: center;
     background-size: contain;
 
-    opacity: 0.28;
-   filter:
-    brightness(1.4)
-    contrast(1.5);
+    opacity: 0.42;
+
+    filter:
+        brightness(1.8)
+        contrast(1.8);
+   
 
     animation: breathingEarth 12s ease-in-out infinite;
 }
@@ -68,8 +70,8 @@
     top: 50%;
     left: 50%;
 
-    width: 620px;
-    height: 620px;
+    width: 480px;
+    height: 480px;
 
     transform: translate(-50%, -50%);
 
