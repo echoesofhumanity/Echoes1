@@ -44,11 +44,11 @@
 .hero-globe {
     position: absolute;
 
-    top: -180px;
+    top: -60px;
     left: 50%;
 
-    width: 1200px;
-    height: 700px;
+    width: 1600px;
+    height: 800px;
 
     transform: translateX(-50%);
 
@@ -57,12 +57,11 @@
     background-position: center;
     background-size: contain;
 
-    opacity: 0.45;
+    opacity: 0.9;
 
     filter:
-        drop-shadow(0 0 20px rgba(120, 190, 255, 0.45))
-        drop-shadow(0 0 80px rgba(120, 190, 255, 0.25));
-
+        drop-shadow(0 0 40px rgba(120, 190, 255, 0.8))
+drop-shadow(0 0 120px rgba(120, 190, 255, 0.5));
     animation: breathingEarth 12s ease-in-out infinite;
 }
 
