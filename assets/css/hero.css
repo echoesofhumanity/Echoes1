@@ -667,7 +667,61 @@ filter:
         filter: blur(0);
     }
    }
-   
+   /* ==================================================
+   CINEMATIC HERO OPENING
+================================================== */
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: #041017;
+
+    z-index: 4;
+
+    pointer-events: none;
+
+    animation: heroOpening 2.2s ease-out forwards;
+}
+
+
+/* OPENING VEIL */
+
+@keyframes heroOpening {
+    0% {
+        opacity: 1;
+    }
+
+    45% {
+        opacity: 0.72;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .hero::before,
+    .hero-globe,
+    .hero-light,
+    .hero-badge,
+    .hero h1,
+    .hero-description,
+    .hero-values,
+    .hero-actions {
+        animation: none;
+    }
+
+    .hero::before {
+        opacity: 0;
+    }
+}
 
                 
 
