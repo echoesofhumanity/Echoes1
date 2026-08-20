@@ -683,6 +683,19 @@ will-change: transform, opacity;
             drop-shadow(0 0 28px rgba(120, 190, 255, 0.16))
             drop-shadow(0 0 65px rgba(120, 190, 255, 0.08));
     }
+   @keyframes heroOpening {
+
+    0% {
+        opacity: 1;
+    }
+
+    45% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 /* =================================================
