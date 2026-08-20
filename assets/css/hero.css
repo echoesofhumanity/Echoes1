@@ -108,9 +108,8 @@
         );
 
     filter: blur(30px);
-   .hero-light {
+
     z-index: 2;
-   }
 }
 /* CONTENT */
 
@@ -194,8 +193,6 @@
     gap: 16px;
 }
 
-/* PARTICLES */
-
 .particle {
 
     position: absolute;
@@ -211,8 +208,8 @@
         0 0 8px rgba(140, 210, 255, 0.8);
 
     animation: particleFloat 12s ease-in-out infinite;
-}
-z-index: 3;
+
+    z-index: 3;
 }
 
 .p1 {
@@ -244,12 +241,6 @@ z-index: 3;
         width: 100%;
         max-width: 680px;
     }
-   .hero-globe {
-    width: 165%;
-    height: auto;
-    top: 48%;
-    opacity: 0.22;
-   }
 
     .hero-globe {
         top: 67%;
