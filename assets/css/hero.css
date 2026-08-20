@@ -342,13 +342,13 @@ filter:
         z-index: 6;
     }
        .hero-orbit {
-        top: 42%;
+    top: 42%;
 
-        width: 125vw;
-        height: 46vw;
+    width: 118vw;
+    height: 43vw;
 
-        opacity: 0.48;
-    }
+    opacity: 0.24;
+       }
 
     .orbit-1 {
         transform:
@@ -356,22 +356,22 @@ filter:
             rotate(-8deg);
     }
 
-    .orbit-2 {
-        width: 112vw;
-        height: 38vw;
+.orbit-2 {
+    width: 108vw;
+    height: 35vw;
 
-        opacity: 0.30;
+    opacity: 0.16;
 
         transform:
             translate(-50%, -50%)
             rotate(18deg);
     }
 
-    .orbit-3 {
-        width: 140vw;
-        height: 58vw;
+.orbit-3 {
+    width: 132vw;
+    height: 54vw;
 
-        opacity: 0.20;
+    opacity: 0.10;
 
         transform:
             translate(-50%, -50%)
@@ -397,7 +397,7 @@ filter:
 
     0%,
     100% {
-        opacity: 0.55;
+        opacity: 0.18;
 
         transform:
             translate(-50%, -50%)
@@ -406,7 +406,7 @@ filter:
     }
 
     50% {
-        opacity: 0.85;
+        opacity: 0.32;
 
         transform:
             translate(-50%, -50%)
@@ -419,7 +419,7 @@ filter:
 
     0%,
     100% {
-        opacity: 0.32;
+        opacity: 0.10;
 
         transform:
             translate(-50%, -50%)
@@ -428,7 +428,7 @@ filter:
     }
 
     50% {
-        opacity: 0.55;
+        opacity: 0.18;
 
         transform:
             translate(-50%, -50%)
@@ -441,7 +441,7 @@ filter:
 
     0%,
     100% {
-        opacity: 0.22;
+        opacity: 0.06;
 
         transform:
             translate(-50%, -50%)
@@ -450,7 +450,7 @@ filter:
     }
 
     50% {
-        opacity: 0.38;
+        opacity: 0.12;
 
         transform:
             translate(-50%, -50%)
@@ -459,7 +459,7 @@ filter:
     }
 }
   
-   }
+   
 
                 
 
