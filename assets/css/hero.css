@@ -292,13 +292,13 @@ filter:
 }
 
 .p1 {
-    top: 27%;
-    left: 30%;
+    top: 32%;
+    left: 16%;
 }
 
-.p2 {
-    top: 29%;
-    left: 8%;
+.p1 {
+    top: 27%;
+    left: 30%;
 }
 
 .p3 {
@@ -306,14 +306,14 @@ filter:
     left: 34%;
 }
 
-.p4 {
-    top: 45%;
-    left: 63%;
+..p4 {
+    top: 43%;
+    left: 58%;
 }
 
 .p5 {
-    top: 62%;
-    right: 18%;
+    top: 42%;
+    right: 58%;
 }
 
 .p6 {
