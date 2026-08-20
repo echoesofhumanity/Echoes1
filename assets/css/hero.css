@@ -55,7 +55,7 @@
 .hero-globe {
     position: absolute;
 
-    top: 58%;
+    top: 48%;
     left: 50%;
 
     width: min(1180px, 92vw);
@@ -244,6 +244,12 @@ z-index: 3;
         width: 100%;
         max-width: 680px;
     }
+   .hero-globe {
+    width: 165%;
+    height: auto;
+    top: 48%;
+    opacity: 0.22;
+   }
 
     .hero-globe {
         top: 67%;
