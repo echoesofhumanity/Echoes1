@@ -291,34 +291,34 @@ filter:
 }
 
 .p1 {
-    top: 20%;
-    left: 20%;
+    top: 32%;
+    left: 16%;
 }
 
 .p2 {
-    top: 30%;
-    right: 20%;
+    top: 36%;
+    left: 48%;
 }
 
 .p3 {
-    top: 70%;
-    left: 25%;
+    top: 53%;
+    left: 34%;
 }
+
 .p4 {
-    top: 58%;
-    right: 12%;
+    top: 45%;
+    left: 63%;
 }
 
 .p5 {
-    top: 78%;
-    right: 32%;
+    top: 62%;
+    right: 18%;
 }
 
 .p6 {
-    top: 38%;
-    left: 72%;
-}
-
+    top: 39%;
+    left: 73%;
+       }
 
 
 /* ANIMATIONS */
