@@ -578,7 +578,95 @@ filter:
             scale(1.018);
     }
 }
-  
+  /* ==================================================
+   HERO ENTRANCE
+   CINEMATIC PAGE LOAD
+================================================== */
+
+.hero-globe {
+    animation:
+        breathingEarth 14s ease-in-out infinite,
+        heroGlobeReveal 2.4s ease-out both;
+}
+
+.hero-light {
+    animation: heroLightReveal 2.8s ease-out both;
+}
+
+.hero-badge {
+    animation: heroContentReveal 1s ease-out 0.25s both;
+}
+
+.hero h1 {
+    animation: heroContentReveal 1.1s ease-out 0.45s both;
+}
+
+.hero-description {
+    animation: heroContentReveal 1.1s ease-out 0.7s both;
+}
+
+.hero-values {
+    animation: heroContentReveal 1s ease-out 0.9s both;
+}
+
+.hero-actions {
+    animation: heroContentReveal 1s ease-out 1.1s both;
+}
+
+
+/* GLOBE */
+
+@keyframes heroGlobeReveal {
+    0% {
+        opacity: 0;
+        filter:
+            blur(4px)
+            brightness(0.7)
+            contrast(1);
+    }
+
+    100% {
+        opacity: 0.16;
+        filter:
+            blur(0.9px)
+            brightness(1.08)
+            contrast(1.02)
+            drop-shadow(0 0 28px rgba(120, 190, 255, 0.16))
+            drop-shadow(0 0 65px rgba(120, 190, 255, 0.08));
+    }
+}
+
+
+/* LIGHT */
+
+@keyframes heroLightReveal {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.75);
+    }
+
+    100% {
+        opacity: 0.38;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+
+/* CONTENT */
+
+@keyframes heroContentReveal {
+    0% {
+        opacity: 0;
+        transform: translateY(18px);
+        filter: blur(5px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+   }
    
 
                 
