@@ -57,7 +57,7 @@
     background-position: center;
     background-size: cover;
 
-    opacity: 0.55;
+    opacity: 0.34;
 
     filter:
     blur(1px)
@@ -212,4 +212,19 @@
 
 
 /* ANIMATIONS */
+@media (max-width: 768px) {
+  .hero-globe {
+    top: 50%;
+    left: 50%;
+    width: 120vw;
+    height: 60vw;
+    transform: translate(-50%, -50%);
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    opacity: 0.34;
+  }
+                }
 
