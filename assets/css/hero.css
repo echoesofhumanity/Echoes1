@@ -110,6 +110,7 @@ filter:
     z-index: 1;
 
     opacity: 0.75;
+       animation: orbitBreathe 18s ease-in-out infinite;
 }
 
 .orbit-1 {
