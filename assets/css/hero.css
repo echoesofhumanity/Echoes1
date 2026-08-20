@@ -580,51 +580,98 @@ will-change: transform, opacity;
             scale(1.018);
     }
 }
-  /* ==================================================
+  /* =================================================
    HERO ENTRANCE
    CINEMATIC PAGE LOAD
-================================================== */
+================================================= */
 
+/* WORLD */
 .hero-globe {
     animation:
         breathingEarth 14s ease-in-out infinite,
         heroGlobeReveal 2.4s ease-out both;
 }
 
+/* ATMOSPHERIC LIGHT */
 .hero-light {
-    animation: heroLightReveal 2.8s ease-out both;
+    animation:
+        heroLightReveal 2.8s ease-out both;
 }
 
+/* ORBITS */
+.hero-orbit {
+    animation:
+        orbitReveal 1.8s ease-out both,
+        orbitBreathe 18s ease-in-out infinite;
+}
+
+.orbit-1 {
+    animation:
+        orbitReveal 1.8s ease-out 0.35s both,
+        orbitBreatheOne 18s ease-in-out infinite;
+}
+
+.orbit-2 {
+    animation:
+        orbitReveal 1.8s ease-out 0.55s both,
+        orbitBreatheTwo 22s ease-in-out infinite;
+}
+
+.orbit-3 {
+    animation:
+        orbitReveal 1.8s ease-out 0.75s both,
+        orbitBreatheThree 26s ease-in-out infinite;
+}
+
+/* PARTICLE FIELD */
+.hero-particles {
+    animation:
+        heroParticlesReveal 1.5s ease-out 1.45s both;
+}
+
+/* BADGE */
 .hero-badge {
-    animation: heroContentReveal 1s ease-out 0.25s both;
+    animation:
+        heroContentReveal 1s ease-out 1.9s both;
 }
 
+/* TITLE */
 .hero h1 {
-    animation: heroContentReveal 1.1s ease-out 0.45s both;
+    animation:
+        heroContentReveal 1.1s ease-out 2.15s both;
 }
 
+/* DESCRIPTION */
 .hero-description {
-    animation: heroContentReveal 1.1s ease-out 0.7s both;
+    animation:
+        heroContentReveal 1.1s ease-out 2.55s both;
 }
 
+/* VALUES */
 .hero-values {
-    animation: heroContentReveal 1s ease-out 0.9s both;
+    animation:
+        heroContentReveal 1s ease-out 2.9s both;
 }
 
+/* ACTIONS */
 .hero-actions {
-    animation: heroContentReveal 1s ease-out 1.1s both;
+    animation:
+        heroContentReveal 1s ease-out 3.25s both;
 }
 
 
-/* GLOBE */
+/* =================================================
+   GLOBE REVEAL
+================================================= */
 
 @keyframes heroGlobeReveal {
+
     0% {
         opacity: 0;
         filter:
-            blur(4px)
-            brightness(0.7)
-            contrast(1);
+            blur(5px)
+            brightness(0.65)
+            contrast(0.9);
     }
 
     100% {
@@ -638,25 +685,76 @@ will-change: transform, opacity;
     }
 }
 
-
-/* LIGHT */
+/* =================================================
+   LIGHT REVEAL
+================================================= */
 
 @keyframes heroLightReveal {
+
     0% {
         opacity: 0;
-        transform: translate(-50%, -50%) scale(0.75);
+        transform:
+            translate(-50%, -50%)
+            scale(0.72);
+    }
+
+    60% {
+        opacity: 0.20;
+        transform:
+            translate(-50%, -50%)
+            scale(0.92);
     }
 
     100% {
         opacity: 0.38;
-        transform: translate(-50%, -50%) scale(1);
+        transform:
+            translate(-50%, -50%)
+            scale(1);
     }
 }
 
 
-/* CONTENT */
+/* =================================================
+   ORBIT REVEAL
+================================================= */
+@keyframes orbitReveal {
+
+    0% {
+        opacity: 0;
+        filter: blur(4px);
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+
+/* =================================================
+   PARTICLE FIELD REVEAL
+================================================= */
+
+@keyframes heroParticlesReveal {
+
+    0% {
+        opacity: 0;
+        filter: blur(4px);
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+
+/* =================================================
+   CONTENT REVEAL
+================================================= */
 
 @keyframes heroContentReveal {
+
     0% {
         opacity: 0;
         transform: translateY(18px);
@@ -669,61 +767,6 @@ will-change: transform, opacity;
         filter: blur(0);
     }
    }
-   /* ==================================================
-   CINEMATIC HERO OPENING
-================================================== */
-
-.hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-
-    background: #041017;
-
-    z-index: 4;
-
-    pointer-events: none;
-
-    animation: heroOpening 2.2s ease-out forwards;
-}
-
-
-/* OPENING VEIL */
-
-@keyframes heroOpening {
-    0% {
-        opacity: 1;
-    }
-
-    45% {
-        opacity: 0.72;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-
-/* ACCESSIBILITY */
-
-@media (prefers-reduced-motion: reduce) {
-
-    .hero::before,
-    .hero-globe,
-    .hero-light,
-    .hero-badge,
-    .hero h1,
-    .hero-description,
-    .hero-values,
-    .hero-actions {
-        animation: none;
-    }
-
-    .hero::before {
-        opacity: 0;
-    }
-}
-
+   
                 
 
