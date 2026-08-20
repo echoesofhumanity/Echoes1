@@ -7,22 +7,32 @@
     position: relative;
     min-height: 100svh;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     overflow: hidden;
 
-    padding: 120px 20px 100px;
+    padding: 155px 20px 100px;
 
     background:
-        radial-gradient(
-            circle at center,
-            #102630 0%,
-            #08131b 45%,
-            #040b11 100%
-        );
-
-    color: #ffffff;
-}
+    radial-gradient(
+        circle at 50% 48%,
+        rgba(72, 150, 190, 0.16) 0%,
+        rgba(28, 72, 98, 0.10) 28%,
+        transparent 58%
+    ),
+    radial-gradient(
+        circle at 50% 85%,
+        rgba(40, 110, 140, 0.10) 0%,
+        transparent 48%
+    ),
+    linear-gradient(
+        180deg,
+        #07111b 0%,
+        #081720 48%,
+        #041017 100%
+    );
+   color: #ffffff;
+}   
 
 /* BACKGROUND */
 
