@@ -296,36 +296,36 @@ will-change: transform, opacity;
 
     z-index: 3;
 }
-
 .p1 {
-    top: 38%;
-    left: 30%;
+    top: 18%;
+    left: 28%;
 }
 
-.p1 {
-    top: 27%;
-    left: 30%;
-}
-
-.p3 {
-    top: 53%;
-    left: 34%;
-}
-
-..p4 {
-    top: 43%;
+.p2 {
+    top: 25%;
     left: 58%;
 }
 
+.p3 {
+    top: 38%;
+    left: 34%;
+}
+
+.p4 {
+    top: 30%;
+    left: 64%;
+}
+
 .p5 {
-    top: 42%;
-    right: 58%;
+    top: 48%;
+    right: 18%;
 }
 
 .p6 {
-    top: 39%;
-    left: 73%;
-       }
+    top: 42%;
+    left: 74%;
+}
+
 .p1 {
     animation-delay: 0s;
 }
