@@ -27,3 +27,57 @@
   position: relative;
   overflow: hidden;
 }
+/* --------------------------------------------------
+   CINEMATIC ROOM ATMOSPHERE
+   -------------------------------------------------- */
+
+.projects-page .project-ecosystem,
+.projects-page .featured-projects,
+.projects-page .projects-in-action,
+.projects-page .how-projects-work,
+.projects-page .global-project-network,
+.projects-page .project-principles {
+  background:
+    radial-gradient(
+      circle at 50% 15%,
+      rgba(42, 91, 105, 0.16),
+      transparent 42%
+    ),
+    #071218;
+  color: #ffffff;
+}
+
+.projects-page .featured-projects,
+.projects-page .how-projects-work,
+.projects-page .project-principles {
+  background:
+    radial-gradient(
+      circle at 50% 80%,
+      rgba(30, 72, 86, 0.13),
+      transparent 44%
+    ),
+    #071218;
+}
+
+
+/* --------------------------------------------------
+   ROOM TYPOGRAPHY
+   -------------------------------------------------- */
+
+.projects-page .project-ecosystem h2,
+.projects-page .featured-projects h2,
+.projects-page .projects-in-action h2,
+.projects-page .how-projects-work h2,
+.projects-page .global-project-network h2,
+.projects-page .project-principles h2 {
+  color: #ffffff;
+}
+
+.projects-page .project-ecosystem p,
+.projects-page .featured-projects p,
+.projects-page .projects-in-action p,
+.projects-page .how-projects-work p,
+.projects-page .global-project-network p,
+.projects-page .project-principles p {
+  color: rgba(235, 244, 246, 0.76);
+}
