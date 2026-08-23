@@ -403,12 +403,12 @@ z-index: 3;
     }
        
     .hero-orbit {
-    top: 52%;
+    top: 55%;
 
     width: 125vw;
     height: 30vw;
 
-    opacity: 0.12;
+    opacity: 0.08;
     }
 
     .orbit-1 {
