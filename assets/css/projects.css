@@ -1,0 +1,29 @@
+/* ==================================================
+   ECHOES OF HUMANITY
+   PROJECTS — CINEMATIC ROOM
+   ================================================== */
+
+
+/* --------------------------------------------------
+   PROJECT PAGE FOUNDATION
+   -------------------------------------------------- */
+
+.projects-page {
+  background: #071218;
+}
+
+
+/* --------------------------------------------------
+   PROJECT ROOM SECTIONS
+   -------------------------------------------------- */
+
+.projects-page .project-ecosystem,
+.projects-page .featured-projects,
+.projects-page .projects-in-action,
+.projects-page .how-projects-work,
+.projects-page .global-project-network,
+.projects-page .project-principles,
+.projects-page .join-the-movement {
+  position: relative;
+  overflow: hidden;
+}
