@@ -401,14 +401,15 @@ z-index: 3;
         position: relative;
         z-index: 6;
     }
-       .hero-orbit {
+       
+    .hero-orbit {
     top: 52%;
 
-    width: 135vw;
-    height: 38vw;
+    width: 125vw;
+    height: 30vw;
 
-    opacity: 0.20;
-       }
+    opacity: 0.12;
+    }
 
     .orbit-1 {
         transform:
