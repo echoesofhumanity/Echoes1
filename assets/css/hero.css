@@ -278,9 +278,10 @@ filter:
 
     animation: particlePulse 4.8s ease-in-out infinite;
 will-change: transform, opacity;
+transform-origin: center;
 
-    z-index: 3;
-}
+z-index: 3;
+   
 .hero-particles {
     position: absolute;
 
