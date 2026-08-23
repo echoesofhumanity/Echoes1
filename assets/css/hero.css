@@ -427,8 +427,45 @@ z-index: 3;
     width: 125vw;
     height: 30vw;
 
-    opacity: 0.08;
-    }
+    opacity: 0.13;
+}
+
+.hero-orbit::after {
+    content: "";
+    position: absolute;
+    inset: -1px;
+
+    border-radius: 50%;
+
+    background:
+        conic-gradient(
+            from 0deg,
+            transparent 0deg,
+            transparent 300deg,
+            rgba(150, 220, 245, 0.02) 320deg,
+            rgba(170, 225, 250, 0.28) 342deg,
+            rgba(150, 220, 245, 0.04) 355deg,
+            transparent 360deg
+        );
+
+    -webkit-mask:
+        radial-gradient(
+            ellipse,
+            transparent calc(100% - 2px),
+            #000 calc(100% - 1px)
+        );
+
+    mask:
+        radial-gradient(
+            ellipse,
+            transparent calc(100% - 2px),
+            #000 calc(100% - 1px)
+        );
+
+    pointer-events: none;
+
+    animation: orbitLightTravel 18s linear infinite;
+}
 
     .orbit-1 {
         transform:
@@ -830,6 +867,15 @@ z-index: 3;
 }
    
 }      
-   
+ @keyframes orbitLightTravel {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+ }  
                 
 
