@@ -442,10 +442,10 @@ z-index: 3;
             from 0deg,
             transparent 0deg,
             transparent 300deg,
-            rgba(150, 220, 245, 0.02) 320deg,
-            rgba(170, 225, 250, 0.28) 342deg,
-            rgba(150, 220, 245, 0.04) 355deg,
-            transparent 360deg
+            rgba(150, 220, 245, 0.025) 320deg,
+rgba(170, 225, 250, 0.34) 342deg,
+rgba(150, 220, 245, 0.05) 355deg,
+transparent 360deg
         );
 
     -webkit-mask:
