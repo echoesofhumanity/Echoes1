@@ -1,7 +1,7 @@
 /* ==================================================
    ECHOES OF HUMANITY
    MAIN SECTIONS
-   CINEMATIC WORLD SYSTEM
+   CINEMATIC WORLD ATMOSPHERE
    ================================================== */
 
 
@@ -31,33 +31,13 @@
 .global-project-network,
 .project-principles {
   position: relative;
+  padding: 96px 0;
   overflow: hidden;
-  padding: var(--section-padding) 0;
-
-  background:
-    radial-gradient(
-      circle at 18% 15%,
-      rgba(106, 174, 181, 0.07),
-      transparent 32%
-    ),
-    radial-gradient(
-      circle at 82% 80%,
-      rgba(78, 143, 151, 0.055),
-      transparent 34%
-    ),
-    linear-gradient(
-      180deg,
-      #07131b 0%,
-      #091923 48%,
-      #081720 100%
-    );
-
-  color: #edf5f6;
 }
 
 
 /* --------------------------------------------------
-   ATMOSPHERIC LIGHT
+   SHARED ATMOSPHERIC DEPTH
    -------------------------------------------------- */
 
 .features::before,
@@ -75,6 +55,7 @@
 .merchandise-design::before,
 .latest-stories::before,
 .partners::before,
+.join-the-movement::before,
 .project-ecosystem::before,
 .projects-in-action::before,
 .how-projects-work::before,
@@ -82,54 +63,20 @@
 .project-principles::before {
   content: "";
   position: absolute;
-  inset: 0;
+
+  width: 420px;
+  height: 420px;
+
+  top: -180px;
+  right: -120px;
+
+  border-radius: 50%;
+
+  background: rgba(78, 143, 151, 0.055);
+
+  filter: blur(80px);
 
   pointer-events: none;
-
-  background:
-    radial-gradient(
-      circle at 50% 0%,
-      rgba(255, 255, 255, 0.035),
-      transparent 28%
-    ),
-    linear-gradient(
-      90deg,
-      transparent 0%,
-      rgba(106, 174, 181, 0.025) 50%,
-      transparent 100%
-    );
-
-  opacity: 0.9;
-}
-
-
-/* --------------------------------------------------
-   SECTION INNER CONTENT
-   -------------------------------------------------- */
-
-.features > .container,
-.who-we-are > .container,
-.global-impact > .container,
-.how-you-can-help > .container,
-.featured-projects > .container,
-.humanitarian-action > .container,
-.humanity-response-center > .container,
-.todays-echoes > .container,
-.echoes-in-action > .container,
-.echoes-academy > .container,
-.global-media-network > .container,
-.marketplace > .container,
-.merchandise-design > .container,
-.latest-stories > .container,
-.partners > .container,
-.join-the-movement > .container,
-.project-ecosystem > .container,
-.projects-in-action > .container,
-.how-projects-work > .container,
-.global-project-network > .container,
-.project-principles > .container {
-  position: relative;
-  z-index: 1;
 }
 
 
@@ -158,22 +105,20 @@
 .how-projects-work h2,
 .global-project-network h2,
 .project-principles h2 {
+  position: relative;
+  z-index: 1;
+
   margin-bottom: 24px;
 
-  color: #f3f8f9;
+  color: #eef7f7;
 
   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1.2;
-
-  letter-spacing: -0.025em;
-
-  text-shadow:
-    0 0 28px rgba(106, 174, 181, 0.08);
 }
 
 
 /* --------------------------------------------------
-   SECTION PARAGRAPHS
+   SECTION INTRODUCTION
    -------------------------------------------------- */
 
 .who-we-are p,
@@ -192,13 +137,73 @@
 .project-principles .section-title p,
 .projects-in-action > .container > p,
 .global-project-network > .container > p {
-  max-width: 820px;
-  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
 
-  color: rgba(221, 234, 236, 0.72);
+  max-width: 820px;
+
+  margin-bottom: 24px;
+
+  color: rgba(218, 233, 234, 0.68);
 
   font-size: 1.05rem;
-  line-height: 1.8;
+  line-height: 1.85;
+}
+
+
+/* --------------------------------------------------
+   PRIMARY WORLD SURFACE
+   -------------------------------------------------- */
+
+.features,
+.global-impact,
+.featured-projects,
+.humanity-response-center,
+.echoes-in-action,
+.global-media-network,
+.merchandise-design,
+.partners,
+.project-ecosystem,
+.global-project-network {
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(78, 143, 151, 0.075),
+      transparent 38%
+    ),
+    linear-gradient(
+      180deg,
+      #09161d 0%,
+      #0b1b23 100%
+    );
+}
+
+
+/* --------------------------------------------------
+   SECONDARY WORLD SURFACE
+   -------------------------------------------------- */
+
+.who-we-are,
+.how-you-can-help,
+.humanitarian-action,
+.todays-echoes,
+.echoes-academy,
+.marketplace,
+.latest-stories,
+.projects-in-action,
+.how-projects-work,
+.project-principles {
+  background:
+    radial-gradient(
+      circle at 85% 30%,
+      rgba(106, 174, 181, 0.055),
+      transparent 35%
+    ),
+    linear-gradient(
+      180deg,
+      #0c1d25 0%,
+      #0a1820 100%
+    );
 }
 
 
@@ -206,19 +211,14 @@
    FEATURES
    -------------------------------------------------- */
 
-.features {
-  background:
-    radial-gradient(
-      circle at 15% 20%,
-      rgba(106, 174, 181, 0.08),
-      transparent 34%
-    ),
-    #081720;
-}
-
 .features .section-title {
+  position: relative;
+  z-index: 1;
+
   max-width: 760px;
-  margin: 0 auto 45px;
+
+  margin: 0 auto 48px;
+
   text-align: center;
 }
 
@@ -226,192 +226,15 @@
   margin-bottom: 14px;
 }
 
-
-/* --------------------------------------------------
-   PROJECT ECOSYSTEM
-   -------------------------------------------------- */
-
-.project-ecosystem {
-  background:
-    radial-gradient(
-      circle at 20% 10%,
-      rgba(106, 174, 181, 0.085),
-      transparent 35%
-    ),
-    linear-gradient(
-      180deg,
-      #081720 0%,
-      #0a1b25 100%
-    );
-}
-
-.project-ecosystem .section-title,
-.featured-projects .section-title,
-.how-projects-work .section-title,
-.project-principles .section-title {
-  max-width: 780px;
-  margin: 0 auto 45px;
-  text-align: center;
-}
-
-.project-ecosystem .section-title h2,
-.featured-projects .section-title h2,
-.how-projects-work .section-title h2,
-.project-principles .section-title h2 {
-  margin-bottom: 14px;
-}
-
-
-/* --------------------------------------------------
-   FEATURED PROJECTS
-   -------------------------------------------------- */
-
-.featured-projects {
-  background:
-    radial-gradient(
-      circle at 85% 15%,
-      rgba(78, 143, 151, 0.08),
-      transparent 32%
-    ),
-    linear-gradient(
-      180deg,
-      #0a1b25 0%,
-      #081720 100%
-    );
-}
-
-
-/* --------------------------------------------------
-   PROJECTS IN ACTION
-   -------------------------------------------------- */
-
-.projects-in-action {
-  position: relative;
-  overflow: hidden;
-  padding: var(--section-padding) 0;
-
-  background:
-    radial-gradient(
-      circle at 12% 75%,
-      rgba(106, 174, 181, 0.07),
-      transparent 30%
-    ),
-    linear-gradient(
-      180deg,
-      #081720 0%,
-      #0b1d27 100%
-    );
-
-  color: #edf5f6;
-}
-
-.projects-in-action::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-
-  pointer-events: none;
-
-  background:
-    radial-gradient(
-      circle at 80% 20%,
-      rgba(255, 255, 255, 0.035),
-      transparent 28%
-    );
-}
-
-.projects-in-action > .container {
-  position: relative;
-  z-index: 1;
-}
-
-.projects-in-action h2 {
-  margin-bottom: 20px;
-  color: #f3f8f9;
-}
-
-
-/* --------------------------------------------------
-   HOW PROJECTS WORK
-   -------------------------------------------------- */
-
-.how-projects-work {
-  background:
-    radial-gradient(
-      circle at 75% 10%,
-      rgba(106, 174, 181, 0.075),
-      transparent 30%
-    ),
-    linear-gradient(
-      180deg,
-      #0b1d27 0%,
-      #091923 100%
-    );
-}
-
-
-/* --------------------------------------------------
-   GLOBAL PROJECT NETWORK
-   -------------------------------------------------- */
-
-.global-project-network {
-  background:
-    radial-gradient(
-      circle at 20% 85%,
-      rgba(78, 143, 151, 0.075),
-      transparent 32%
-    ),
-    linear-gradient(
-      180deg,
-      #091923 0%,
-      #081720 100%
-    );
-}
-
-.global-project-network h2 {
-  text-align: center;
-}
-
-.global-project-network > .container > p {
+.features .section-title p {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-
-/* --------------------------------------------------
-   PROJECT PRINCIPLES
-   -------------------------------------------------- */
-
-.project-principles {
-  background:
-    radial-gradient(
-      circle at 50% 15%,
-      rgba(106, 174, 181, 0.085),
-      transparent 36%
-    ),
-    linear-gradient(
-      180deg,
-      #081720 0%,
-      #0a1b25 100%
-    );
 }
 
 
 /* --------------------------------------------------
    WHO WE ARE
    -------------------------------------------------- */
-
-.who-we-are {
-  background:
-    radial-gradient(
-      circle at 80% 20%,
-      rgba(106, 174, 181, 0.065),
-      transparent 30%
-    ),
-    #091923;
-}
 
 .who-we-are .container {
   max-width: 900px;
@@ -422,44 +245,69 @@
    GLOBAL IMPACT
    -------------------------------------------------- */
 
-.global-impact {
-  background:
-    radial-gradient(
-      circle at 15% 15%,
-      rgba(78, 143, 151, 0.07),
-      transparent 32%
-    ),
-    #081720;
-}
-
-.global-impact h2 {
+.global-impact h2,
+.how-you-can-help h2,
+.featured-projects h2,
+.humanity-response-center h2,
+.todays-echoes h2,
+.echoes-in-action h2,
+.echoes-academy h2,
+.global-media-network h2,
+.marketplace h2,
+.merchandise-design h2,
+.latest-stories h2,
+.partners h2,
+.project-ecosystem h2,
+.projects-in-action h2,
+.how-projects-work h2,
+.global-project-network h2,
+.project-principles h2 {
   text-align: center;
-  margin-bottom: 40px;
 }
 
 
 /* --------------------------------------------------
-   HOW YOU CAN HELP
+   CENTERED SECTION INTRO
    -------------------------------------------------- */
 
-.how-you-can-help {
-  background:
-    radial-gradient(
-      circle at 80% 80%,
-      rgba(106, 174, 181, 0.07),
-      transparent 32%
-    ),
-    #091923;
-}
-
-.how-you-can-help h2 {
-  text-align: center;
-}
-
-.how-you-can-help > .container > p {
+.how-you-can-help > .container > p,
+.humanity-response-center > .container > p,
+.echoes-academy > .container > p,
+.global-media-network > .container > p,
+.marketplace > .container > p,
+.merchandise-design > .container > p,
+.partners > .container > p {
   margin-left: auto;
   margin-right: auto;
+
   text-align: center;
+}
+
+
+/* --------------------------------------------------
+   FEATURED PROJECTS
+   -------------------------------------------------- */
+
+.featured-projects .section-title,
+.project-ecosystem .section-title,
+.how-projects-work .section-title,
+.project-principles .section-title {
+  position: relative;
+  z-index: 1;
+
+  max-width: 800px;
+
+  margin: 0 auto 48px;
+
+  text-align: center;
+}
+
+.featured-projects .section-title p,
+.project-ecosystem .section-title p,
+.how-projects-work .section-title p,
+.project-principles .section-title p {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -467,110 +315,8 @@
    HUMANITARIAN ACTION
    -------------------------------------------------- */
 
-.humanitarian-action {
-  background:
-    radial-gradient(
-      circle at 20% 20%,
-      rgba(106, 174, 181, 0.075),
-      transparent 30%
-    ),
-    #081720;
-}
-
 .humanitarian-action .container {
   max-width: 900px;
-}
-
-
-/* --------------------------------------------------
-   HUMANITY RESPONSE CENTER
-   -------------------------------------------------- */
-
-.humanity-response-center {
-  background:
-    radial-gradient(
-      circle at 80% 15%,
-      rgba(78, 143, 151, 0.07),
-      transparent 32%
-    ),
-    #091923;
-}
-
-.humanity-response-center h2 {
-  text-align: center;
-}
-
-.humanity-response-center > .container > p {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-
-/* --------------------------------------------------
-   TODAY'S ECHOES
-   -------------------------------------------------- */
-
-.todays-echoes {
-  background:
-    radial-gradient(
-      circle at 15% 80%,
-      rgba(106, 174, 181, 0.07),
-      transparent 32%
-    ),
-    #081720;
-}
-
-.todays-echoes h2 {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-
-/* --------------------------------------------------
-   ECHOES IN ACTION
-   -------------------------------------------------- */
-
-.echoes-in-action {
-  background:
-    radial-gradient(
-      circle at 85% 20%,
-      rgba(78, 143, 151, 0.07),
-      transparent 32%
-    ),
-    #091923;
-}
-
-.echoes-in-action h2 {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-
-/* --------------------------------------------------
-   ECHOES ACADEMY
-   -------------------------------------------------- */
-
-.echoes-academy {
-  background:
-    radial-gradient(
-      circle at 20% 15%,
-      rgba(106, 174, 181, 0.075),
-      transparent 32%
-    ),
-    #081720;
-}
-
-.echoes-academy h2 {
-  text-align: center;
-}
-
-.echoes-academy > .container > p {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  margin-bottom: 40px;
 }
 
 
@@ -578,31 +324,11 @@
    GLOBAL MEDIA NETWORK
    -------------------------------------------------- */
 
-.global-media-network {
-  background:
-    radial-gradient(
-      circle at 80% 75%,
-      rgba(78, 143, 151, 0.075),
-      transparent 32%
-    ),
-    #091923;
-}
-
-.global-media-network h2 {
-  text-align: center;
-}
-
-.global-media-network > .container > p {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
 .global-media-network > .container > .btn {
   display: block;
   width: fit-content;
-  margin: 40px auto 0;
+
+  margin: 42px auto 0;
 }
 
 
@@ -611,102 +337,17 @@
    -------------------------------------------------- */
 
 .marketplace {
-  background:
-    radial-gradient(
-      circle at 50% 10%,
-      rgba(106, 174, 181, 0.08),
-      transparent 35%
-    ),
-    #081720;
   text-align: center;
 }
 
-.marketplace .container {
-  max-width: 800px;
-}
-
-.marketplace h2 {
-  margin-bottom: 16px;
-}
-
-.marketplace > .container > p {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-/* --------------------------------------------------
-   MERCHANDISE
-   -------------------------------------------------- */
-
-.merchandise-design {
-  background:
-    radial-gradient(
-      circle at 50% 90%,
-      rgba(78, 143, 151, 0.075),
-      transparent 35%
-    ),
-    #091923;
-  text-align: center;
-}
-
+.marketplace .container,
 .merchandise-design .container {
   max-width: 800px;
 }
 
+.marketplace h2,
 .merchandise-design h2 {
   margin-bottom: 16px;
-}
-
-.merchandise-design > .container > p {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-/* --------------------------------------------------
-   LATEST STORIES
-   -------------------------------------------------- */
-
-.latest-stories {
-  background:
-    radial-gradient(
-      circle at 15% 20%,
-      rgba(106, 174, 181, 0.07),
-      transparent 32%
-    ),
-    #081720;
-}
-
-.latest-stories h2 {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-
-/* --------------------------------------------------
-   PARTNERS
-   -------------------------------------------------- */
-
-.partners {
-  background:
-    radial-gradient(
-      circle at 85% 15%,
-      rgba(78, 143, 151, 0.07),
-      transparent 32%
-    ),
-    #091923;
-}
-
-.partners h2 {
-  text-align: center;
-}
-
-.partners > .container > p {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  margin-bottom: 40px;
 }
 
 
@@ -718,17 +359,18 @@
   background:
     radial-gradient(
       circle at 50% 0%,
-      rgba(106, 174, 181, 0.13),
-      transparent 40%
+      rgba(106, 174, 181, 0.16),
+      transparent 45%
     ),
     linear-gradient(
-      135deg,
-      #050e14 0%,
-      #0b2029 55%,
-      #07131b 100%
+      145deg,
+      #071218 0%,
+      #0c2029 55%,
+      #071218 100%
     );
 
   color: #ffffff;
+
   text-align: center;
 }
 
@@ -737,61 +379,21 @@
 }
 
 .join-the-movement > .container {
+  position: relative;
+  z-index: 1;
+
   max-width: 850px;
 }
 
 .join-the-movement > .container > p {
   margin-left: auto;
   margin-right: auto;
-  color: rgba(255, 255, 255, 0.78);
+
+  color: rgba(235, 247, 248, 0.76);
 }
 
 .join-the-movement .btn {
   margin-top: 20px;
-}
-
-
-/* --------------------------------------------------
-   SECTION TRANSITIONS
-   -------------------------------------------------- */
-
-.features::after,
-.who-we-are::after,
-.global-impact::after,
-.how-you-can-help::after,
-.featured-projects::after,
-.humanitarian-action::after,
-.humanity-response-center::after,
-.todays-echoes::after,
-.echoes-in-action::after,
-.echoes-academy::after,
-.global-media-network::after,
-.marketplace::after,
-.merchandise-design::after,
-.latest-stories::after,
-.partners::after,
-.project-ecosystem::after,
-.projects-in-action::after,
-.how-projects-work::after,
-.global-project-network::after,
-.project-principles::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-
-  height: 1px;
-
-  background:
-    linear-gradient(
-      90deg,
-      transparent,
-      rgba(106, 174, 181, 0.18),
-      transparent
-    );
-
-  pointer-events: none;
 }
 
 
@@ -822,7 +424,7 @@
   .how-projects-work,
   .global-project-network,
   .project-principles {
-    padding: 60px 0;
+    padding: 72px 0;
   }
 
   .features h2,
@@ -849,13 +451,16 @@
     font-size: 2rem;
   }
 
-  .project-ecosystem .section-title,
-  .featured-projects .section-title,
-  .how-projects-work .section-title,
-  .project-principles .section-title {
-    margin-bottom: 34px;
-  }
-
+  .who-we-are p,
+  .how-you-can-help > .container > p,
+  .humanitarian-action p,
+  .humanity-response-center > .container > p,
+  .echoes-academy > .container > p,
+  .global-media-network > .container > p,
+  .marketplace > .container > p,
+  .merchandise-design > .container > p,
+  .partners > .container > p,
+  .join-the-movement > .container > p,
   .project-ecosystem .section-title p,
   .featured-projects .section-title p,
   .how-projects-work .section-title p,
@@ -863,7 +468,7 @@
   .projects-in-action > .container > p,
   .global-project-network > .container > p {
     font-size: 0.98rem;
-    line-height: 1.7;
+    line-height: 1.75;
   }
 
-       }
+}
