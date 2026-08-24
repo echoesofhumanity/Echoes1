@@ -1,17 +1,200 @@
 /* ==================================================
    ECHOES OF HUMANITY
    CARDS & GRIDS
+   CINEMATIC WORLD SYSTEM
    ================================================== */
 
 
 /* --------------------------------------------------
-   FEATURES GRID
+   GRID FOUNDATION
    -------------------------------------------------- */
 
-.features-grid {
+.features-grid,
+.project-grid,
+.cards {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
+  gap: 26px;
+}
+
+
+/* --------------------------------------------------
+   CINEMATIC CARD
+   -------------------------------------------------- */
+
+.feature-card,
+.card {
+  position: relative;
+  padding: 32px 28px;
+
+  border: 1px solid rgba(170, 210, 214, 0.16);
+  border-radius: 22px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(24, 48, 57, 0.72),
+      rgba(7, 20, 27, 0.88)
+    );
+
+  box-shadow:
+    0 20px 55px rgba(0, 0, 0, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.045);
+
+  color: #edf7f7;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.45s cubic-bezier(.2,.7,.2,1),
+    border-color 0.45s ease,
+    box-shadow 0.45s ease,
+    background 0.45s ease;
+}
+
+
+/* --------------------------------------------------
+   INNER ATMOSPHERIC LIGHT
+   -------------------------------------------------- */
+
+.feature-card::before,
+.card::before {
+  content: "";
+  position: absolute;
+
+  width: 180px;
+  height: 180px;
+
+  top: -90px;
+  right: -70px;
+
+  border-radius: 50%;
+
+  background: rgba(106, 174, 181, 0.10);
+
+  filter: blur(35px);
+
+  pointer-events: none;
+}
+
+
+/* --------------------------------------------------
+   LOWER DEPTH
+   -------------------------------------------------- */
+
+.feature-card::after,
+.card::after {
+  content: "";
+  position: absolute;
+
+  left: 24px;
+  right: 24px;
+  bottom: 0;
+
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(120, 190, 196, 0.22),
+      transparent
+    );
+
+  pointer-events: none;
+}
+
+
+/* --------------------------------------------------
+   HOVER
+   -------------------------------------------------- */
+
+.feature-card:hover,
+.card:hover {
+  transform: translateY(-7px);
+
+  border-color: rgba(130, 205, 211, 0.34);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(29, 58, 67, 0.82),
+      rgba(7, 22, 29, 0.94)
+    );
+
+  box-shadow:
+    0 28px 70px rgba(0, 0, 0, 0.30),
+    0 0 35px rgba(80, 160, 170, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+
+/* --------------------------------------------------
+   CARD TITLES
+   -------------------------------------------------- */
+
+.feature-card h3,
+.card h3 {
+  position: relative;
+  z-index: 1;
+
+  margin-bottom: 14px;
+
+  color: #f1f8f8;
+
+  font-size: 1.16rem;
+  font-weight: 650;
+  line-height: 1.4;
+}
+
+
+/* --------------------------------------------------
+   CARD TEXT
+   -------------------------------------------------- */
+
+.feature-card p,
+.card p {
+  position: relative;
+  z-index: 1;
+
+  color: rgba(224, 237, 238, 0.72);
+
+  font-size: 0.96rem;
+  line-height: 1.75;
+}
+
+
+/* --------------------------------------------------
+   FEATURE ICON
+   -------------------------------------------------- */
+
+.feature-icon {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 64px;
+  height: 64px;
+
+  margin: 0 auto 20px;
+
+  border: 1px solid rgba(140, 200, 205, 0.14);
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle at 35% 30%,
+      rgba(130, 205, 211, 0.16),
+      rgba(12, 31, 38, 0.72)
+    );
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.18);
+
+  font-size: 1.8rem;
 }
 
 
@@ -20,128 +203,22 @@
    -------------------------------------------------- */
 
 .feature-card {
-  padding: 30px 24px;
-  border: 1px solid #dfe5e3;
-  border-radius: 16px;
-  background: #ffffff;
-  box-shadow: 0 8px 30px rgba(36, 50, 58, 0.06);
   text-align: center;
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease,
-    border-color 0.25s ease;
-}
-
-.feature-card:hover {
-  transform: translateY(-5px);
-  border-color: #c7d9d8;
-  box-shadow: 0 14px 35px rgba(36, 50, 58, 0.11);
-}
-
-.feature-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 64px;
-  height: 64px;
-  margin: 0 auto 18px;
-  border-radius: 50%;
-  background: #eef3f1;
-  font-size: 1.8rem;
-}
-
-.feature-card h3 {
-  margin-bottom: 10px;
-  color: #24323a;
-  font-size: 1.15rem;
-  line-height: 1.35;
-}
-
-.feature-card p {
-  color: #5f6b70;
-  font-size: 0.95rem;
-  line-height: 1.7;
 }
 
 
 /* --------------------------------------------------
-   PROJECT GRID
+   DYNAMIC CONTENT
    -------------------------------------------------- */
 
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
-}
-
-
-/* --------------------------------------------------
-   GENERAL CARD
-   -------------------------------------------------- */
-
-.card {
-  padding: 28px 24px;
-  border: 1px solid #dfe5e3;
-  border-radius: 16px;
-  background: #ffffff;
-  box-shadow: 0 8px 30px rgba(36, 50, 58, 0.06);
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease,
-    border-color 0.25s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  border-color: #c7d9d8;
-  box-shadow: 0 14px 35px rgba(36, 50, 58, 0.11);
-}
-
-.card h3 {
-  margin-bottom: 12px;
-  color: #24323a;
-  font-size: 1.12rem;
-  line-height: 1.4;
-}
-
-.card p {
-  color: #5f6b70;
-  font-size: 0.95rem;
-  line-height: 1.7;
-}
-
-
-/* --------------------------------------------------
-   DYNAMIC CONTENT CARDS
-   -------------------------------------------------- */
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
-}
-
-
-/* --------------------------------------------------
-   TODAY'S ECHOES
-   -------------------------------------------------- */
-
-#todays-echoes-cards {
-  width: 100%;
-}
-
-
-/* --------------------------------------------------
-   ECHOES IN ACTION
-   -------------------------------------------------- */
-
+#todays-echoes-cards,
 #echoes-in-action-cards {
   width: 100%;
 }
 
 
 /* --------------------------------------------------
-   EMPTY DYNAMIC CARD AREA
+   EMPTY DYNAMIC AREA
    -------------------------------------------------- */
 
 .cards:empty {
@@ -174,15 +251,18 @@
   .project-grid,
   .cards {
     grid-template-columns: 1fr;
-    gap: 18px;
+    gap: 20px;
   }
 
-  .feature-card {
-    padding: 26px 20px;
-  }
-
+  .feature-card,
   .card {
-    padding: 24px 20px;
+    padding: 28px 24px;
+    border-radius: 20px;
   }
 
+  .feature-card:hover,
+  .card:hover {
+    transform: translateY(-3px);
   }
+
+}
