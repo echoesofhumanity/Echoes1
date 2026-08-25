@@ -513,8 +513,11 @@
     }
 
        }
+
 /* ==================================================
-   PROJECTS PAGE — DEEP CINEMATIC ATMOSPHERE
+   PROJECTS PAGE
+   DEEP HUMANITARIAN ATMOSPHERE
+   ECHOES OF HUMANITY UNIVERSE
 ================================================== */
 
 body.projects-page {
@@ -523,33 +526,38 @@ body.projects-page {
 
     background:
         radial-gradient(
-            ellipse 75% 42% at 50% 28%,
-            rgba(30, 115, 155, 0.20) 0%,
-            rgba(12, 55, 78, 0.12) 32%,
+            ellipse 72% 42% at 50% 25%,
+            rgba(46, 128, 150, 0.15) 0%,
+            rgba(25, 78, 96, 0.08) 36%,
+            transparent 72%
+        ),
+
+        radial-gradient(
+            ellipse 48% 50% at 8% 46%,
+            rgba(40, 125, 150, 0.08) 0%,
             transparent 70%
         ),
+
         radial-gradient(
-            ellipse 55% 55% at 8% 48%,
-            rgba(0, 130, 190, 0.13) 0%,
-            transparent 68%
+            ellipse 50% 55% at 92% 66%,
+            rgba(35, 115, 145, 0.07) 0%,
+            transparent 72%
         ),
-        radial-gradient(
-            ellipse 55% 55% at 92% 68%,
-            rgba(0, 105, 170, 0.11) 0%,
-            transparent 70%
-        ),
+
         linear-gradient(
             180deg,
-            #050e1b 0%,
-            #071a25 38%,
-            #06151f 72%,
-            #040d17 100%
+            #050e18 0%,
+            #071923 34%,
+            #071d27 58%,
+            #061720 78%,
+            #040d16 100%
         );
 }
 
 
 /* ==================================================
-   DEEP ATMOSPHERIC LIGHT
+   SOFT HUMAN LIGHT
+   A QUIET GLOW — NOT SCIENCE FICTION
 ================================================== */
 
 body.projects-page::before {
@@ -558,7 +566,7 @@ body.projects-page::before {
 
     position: fixed;
 
-    inset: -15%;
+    inset: -18%;
 
     pointer-events: none;
 
@@ -567,40 +575,42 @@ body.projects-page::before {
     background:
 
         radial-gradient(
-            ellipse 42% 32% at 50% 32%,
-            rgba(80, 190, 225, 0.16) 0%,
-            rgba(40, 125, 165, 0.08) 38%,
+            ellipse 44% 30% at 50% 28%,
+            rgba(92, 183, 198, 0.11) 0%,
+            rgba(55, 125, 145, 0.055) 38%,
             transparent 72%
         ),
 
         radial-gradient(
-            circle at 16% 24%,
-            rgba(65, 180, 230, 0.13) 0%,
+            circle at 18% 25%,
+            rgba(105, 190, 205, 0.065) 0%,
+            transparent 18%
+        ),
+
+        radial-gradient(
+            circle at 82% 42%,
+            rgba(95, 180, 200, 0.05) 0%,
             transparent 20%
         ),
 
         radial-gradient(
-            circle at 84% 40%,
-            rgba(45, 150, 210, 0.10) 0%,
-            transparent 22%
-        ),
-
-        radial-gradient(
             circle at 50% 88%,
-            rgba(25, 110, 155, 0.10) 0%,
-            transparent 28%
+            rgba(65, 150, 175, 0.075) 0%,
+            transparent 30%
         );
 
-    filter: blur(18px);
+    filter: blur(22px);
 
-    opacity: 0.95;
+    opacity: 0.86;
 
-    animation: projectsAtmosphere 12s ease-in-out infinite;
+    animation:
+        projectsHumanLight 18s ease-in-out infinite;
 }
 
 
 /* ==================================================
-   SUBTLE GLOBAL NETWORK
+   QUIET LIGHT PARTICLES
+   HUMAN • ORGANIC • ATMOSPHERIC
 ================================================== */
 
 body.projects-page::after {
@@ -618,138 +628,139 @@ body.projects-page::after {
     background-image:
 
         radial-gradient(
-            circle at 14% 24%,
-            rgba(150, 225, 255, 0.80) 0,
-            rgba(150, 225, 255, 0.30) 1px,
+            circle at 12% 22%,
+            rgba(175, 220, 225, 0.28) 0,
+            rgba(175, 220, 225, 0.10) 1px,
             transparent 3px
         ),
 
         radial-gradient(
             circle at 27% 38%,
-            rgba(110, 205, 245, 0.65) 0,
-            rgba(110, 205, 245, 0.22) 1px,
+            rgba(140, 205, 215, 0.20) 0,
+            rgba(140, 205, 215, 0.07) 1px,
             transparent 3px
         ),
 
         radial-gradient(
-            circle at 72% 25%,
-            rgba(140, 220, 255, 0.60) 0,
-            rgba(140, 220, 255, 0.20) 1px,
+            circle at 74% 24%,
+            rgba(175, 220, 225, 0.22) 0,
+            rgba(175, 220, 225, 0.06) 1px,
             transparent 3px
         ),
 
         radial-gradient(
-            circle at 86% 53%,
-            rgba(110, 205, 245, 0.55) 0,
-            rgba(110, 205, 245, 0.18) 1px,
+            circle at 88% 52%,
+            rgba(145, 210, 220, 0.18) 0,
+            rgba(145, 210, 220, 0.055) 1px,
             transparent 3px
         ),
 
         radial-gradient(
-            circle at 22% 76%,
-            rgba(100, 195, 240, 0.48) 0,
-            rgba(100, 195, 240, 0.15) 1px,
+            circle at 19% 72%,
+            rgba(125, 195, 210, 0.16) 0,
+            rgba(125, 195, 210, 0.05) 1px,
             transparent 3px
         ),
 
         radial-gradient(
-            circle at 78% 82%,
-            rgba(100, 195, 240, 0.42) 0,
-            rgba(100, 195, 240, 0.14) 1px,
+            circle at 78% 81%,
+            rgba(155, 215, 220, 0.17) 0,
+            rgba(155, 215, 220, 0.05) 1px,
             transparent 3px
         ),
 
-        linear-gradient(
-            122deg,
-            transparent 0%,
-            transparent 34%,
-            rgba(80, 185, 230, 0.055) 34.15%,
-            transparent 34.35%,
-            transparent 61%,
-            rgba(80, 185, 230, 0.045) 61.15%,
-            transparent 61.35%
+        radial-gradient(
+            circle at 52% 58%,
+            rgba(190, 225, 225, 0.12) 0,
+            rgba(190, 225, 225, 0.035) 1px,
+            transparent 3px
         ),
 
-        linear-gradient(
-            28deg,
-            transparent 0%,
-            transparent 46%,
-            rgba(90, 195, 235, 0.045) 46.15%,
-            transparent 46.35%,
-            transparent 78%,
-            rgba(90, 195, 235, 0.035) 78.15%,
-            transparent 78.35%
+        radial-gradient(
+            circle at 42% 91%,
+            rgba(140, 205, 215, 0.13) 0,
+            rgba(140, 205, 215, 0.04) 1px,
+            transparent 3px
         );
 
-    background-size:
-        auto,
-        auto,
-        auto,
-        auto,
-        auto,
-        auto,
-        100% 100%,
-        100% 100%;
+    opacity: 0.48;
 
-    opacity: 0.72;
-
-    animation: projectsNetwork 18s ease-in-out infinite;
+    animation:
+        projectsLightParticles 24s ease-in-out infinite;
 }
 
 
 /* ==================================================
-   CONTENT ABOVE ATMOSPHERE
+   KEEP CONTENT ABOVE THE ATMOSPHERE
 ================================================== */
 
 body.projects-page > * {
-
     position: relative;
-
     z-index: 1;
 }
 
 
 /* ==================================================
-   BREATHING ATMOSPHERE
+   HUMAN LIGHT BREATH
 ================================================== */
 
-@keyframes projectsAtmosphere {
+@keyframes projectsHumanLight {
 
     0% {
-        transform: scale(1);
-        opacity: 0.82;
+        transform:
+            scale(1)
+            translate3d(0, 0, 0);
+
+        opacity: 0.72;
     }
 
     50% {
-        transform: scale(1.035);
-        opacity: 1;
+        transform:
+            scale(1.025)
+            translate3d(0, -8px, 0);
+
+        opacity: 0.92;
     }
 
     100% {
-        transform: scale(1);
-        opacity: 0.82;
+        transform:
+            scale(1)
+            translate3d(0, 0, 0);
+
+        opacity: 0.72;
     }
 }
 
 
 /* ==================================================
-   GLOBAL NETWORK BREATHING
+   LIGHT PARTICLES — SLOW AND ORGANIC
 ================================================== */
 
-@keyframes projectsNetwork {
+@keyframes projectsLightParticles {
 
     0% {
-        transform: translate3d(0, 0, 0);
-        opacity: 0.55;
+        transform:
+            translate3d(0, 0, 0)
+            scale(1);
+
+        opacity: 0.34;
     }
 
     50% {
-        transform: translate3d(0, -6px, 0);
-        opacity: 0.78;
+        transform:
+            translate3d(0, -7px, 0)
+            scale(1.015);
+
+        opacity: 0.54;
     }
 
     100% {
-        transform: translate3d(0, 0, 0);
-        opacity: 0.55;
+        transform:
+            translate3d(0, 0, 0)
+            scale(1);
+
+        opacity: 0.34;
     }
-       }
+                 }
+
+
