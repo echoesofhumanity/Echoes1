@@ -340,35 +340,38 @@
 
 body.projects-page {
     position: relative;
+    overflow-x: hidden;
 
     background:
         radial-gradient(
-            circle at 50% 28%,
-            rgba(20, 91, 125, 0.16),
-            transparent 34%
+            ellipse 75% 42% at 50% 28%,
+            rgba(30, 115, 155, 0.20) 0%,
+            rgba(12, 55, 78, 0.12) 32%,
+            transparent 70%
         ),
         radial-gradient(
-            circle at 8% 48%,
-            rgba(0, 122, 180, 0.12),
-            transparent 30%
+            ellipse 55% 55% at 8% 48%,
+            rgba(0, 130, 190, 0.13) 0%,
+            transparent 68%
         ),
         radial-gradient(
-            circle at 92% 72%,
-            rgba(0, 174, 220, 0.08),
-            transparent 32%
+            ellipse 55% 55% at 92% 68%,
+            rgba(0, 105, 170, 0.11) 0%,
+            transparent 70%
         ),
         linear-gradient(
             180deg,
-            #06101d 0%,
-            #071722 45%,
-            #06131d 100%
+            #050e1b 0%,
+            #071a25 38%,
+            #06151f 72%,
+            #040d17 100%
         );
-
-    overflow-x: hidden;
 }
 
 
-/* ATMOSPHERIC LIGHT */
+/* ==================================================
+   DEEP ATMOSPHERIC LIGHT
+================================================== */
 
 body.projects-page::before {
 
@@ -376,34 +379,50 @@ body.projects-page::before {
 
     position: fixed;
 
-    inset: 0;
+    inset: -15%;
 
     pointer-events: none;
 
     z-index: 0;
 
     background:
+
         radial-gradient(
-            circle at 18% 34%,
-            rgba(0, 155, 220, 0.14) 0,
-            transparent 18%
+            ellipse 42% 32% at 50% 32%,
+            rgba(80, 190, 225, 0.16) 0%,
+            rgba(40, 125, 165, 0.08) 38%,
+            transparent 72%
         ),
+
         radial-gradient(
-            circle at 82% 55%,
-            rgba(0, 110, 180, 0.11) 0,
+            circle at 16% 24%,
+            rgba(65, 180, 230, 0.13) 0%,
             transparent 20%
         ),
+
         radial-gradient(
-            circle at 50% 82%,
-            rgba(20, 100, 145, 0.08) 0,
-            transparent 24%
+            circle at 84% 40%,
+            rgba(45, 150, 210, 0.10) 0%,
+            transparent 22%
+        ),
+
+        radial-gradient(
+            circle at 50% 88%,
+            rgba(25, 110, 155, 0.10) 0%,
+            transparent 28%
         );
 
-    opacity: 0.9;
+    filter: blur(18px);
+
+    opacity: 0.95;
+
+    animation: projectsAtmosphere 12s ease-in-out infinite;
 }
 
 
-/* SUBTLE HUMAN NETWORK */
+/* ==================================================
+   SUBTLE GLOBAL NETWORK
+================================================== */
 
 body.projects-page::after {
 
@@ -420,59 +439,138 @@ body.projects-page::after {
     background-image:
 
         radial-gradient(
-            circle at 12% 24%,
-            rgba(120, 210, 255, 0.55) 0,
-            rgba(120, 210, 255, 0.55) 1px,
-            transparent 2px
+            circle at 14% 24%,
+            rgba(150, 225, 255, 0.80) 0,
+            rgba(150, 225, 255, 0.30) 1px,
+            transparent 3px
         ),
 
         radial-gradient(
-            circle at 78% 18%,
-            rgba(120, 210, 255, 0.42) 0,
-            rgba(120, 210, 255, 0.42) 1px,
-            transparent 2px
+            circle at 27% 38%,
+            rgba(110, 205, 245, 0.65) 0,
+            rgba(110, 205, 245, 0.22) 1px,
+            transparent 3px
         ),
 
         radial-gradient(
-            circle at 88% 68%,
-            rgba(120, 210, 255, 0.35) 0,
-            rgba(120, 210, 255, 0.35) 1px,
-            transparent 2px
+            circle at 72% 25%,
+            rgba(140, 220, 255, 0.60) 0,
+            rgba(140, 220, 255, 0.20) 1px,
+            transparent 3px
         ),
 
         radial-gradient(
-            circle at 22% 82%,
-            rgba(100, 190, 240, 0.32) 0,
-            rgba(100, 190, 240, 0.32) 1px,
-            transparent 2px
+            circle at 86% 53%,
+            rgba(110, 205, 245, 0.55) 0,
+            rgba(110, 205, 245, 0.18) 1px,
+            transparent 3px
+        ),
+
+        radial-gradient(
+            circle at 22% 76%,
+            rgba(100, 195, 240, 0.48) 0,
+            rgba(100, 195, 240, 0.15) 1px,
+            transparent 3px
+        ),
+
+        radial-gradient(
+            circle at 78% 82%,
+            rgba(100, 195, 240, 0.42) 0,
+            rgba(100, 195, 240, 0.14) 1px,
+            transparent 3px
         ),
 
         linear-gradient(
-            118deg,
+            122deg,
             transparent 0%,
-            transparent 38%,
-            rgba(70, 170, 220, 0.055) 38.2%,
-            transparent 38.5%,
-            transparent 67%,
-            rgba(70, 170, 220, 0.045) 67.2%,
-            transparent 67.5%
+            transparent 34%,
+            rgba(80, 185, 230, 0.055) 34.15%,
+            transparent 34.35%,
+            transparent 61%,
+            rgba(80, 185, 230, 0.045) 61.15%,
+            transparent 61.35%
         ),
 
         linear-gradient(
             28deg,
             transparent 0%,
-            transparent 55%,
-            rgba(90, 190, 230, 0.04) 55.2%,
-            transparent 55.5%
+            transparent 46%,
+            rgba(90, 195, 235, 0.045) 46.15%,
+            transparent 46.35%,
+            transparent 78%,
+            rgba(90, 195, 235, 0.035) 78.15%,
+            transparent 78.35%
         );
 
-    opacity: 0.7;
+    background-size:
+        auto,
+        auto,
+        auto,
+        auto,
+        auto,
+        auto,
+        100% 100%,
+        100% 100%;
+
+    opacity: 0.72;
+
+    animation: projectsNetwork 18s ease-in-out infinite;
 }
 
 
-/* KEEP PAGE CONTENT ABOVE ATMOSPHERE */
+/* ==================================================
+   CONTENT ABOVE ATMOSPHERE
+================================================== */
 
 body.projects-page > * {
+
     position: relative;
+
     z-index: 1;
 }
+
+
+/* ==================================================
+   BREATHING ATMOSPHERE
+================================================== */
+
+@keyframes projectsAtmosphere {
+
+    0% {
+        transform: scale(1);
+        opacity: 0.82;
+    }
+
+    50% {
+        transform: scale(1.035);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0.82;
+    }
+}
+
+
+/* ==================================================
+   GLOBAL NETWORK BREATHING
+================================================== */
+
+@keyframes projectsNetwork {
+
+    0% {
+        transform: translate3d(0, 0, 0);
+        opacity: 0.55;
+    }
+
+    50% {
+        transform: translate3d(0, -6px, 0);
+        opacity: 0.78;
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0);
+        opacity: 0.55;
+    }
+       }
