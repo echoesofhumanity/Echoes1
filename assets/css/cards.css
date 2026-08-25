@@ -949,4 +949,196 @@ body.projects-page::after {
   }
 
 }
+/* ==================================================
+   PROJECTS — GENTLE RISE OF HOPE
+   ATMOSPHERIC SECTION TRANSITIONS
+   ================================================== */
 
+.projects-page main {
+    position: relative;
+    isolation: isolate;
+}
+
+
+/* --------------------------------------------------
+   THE PAGE BREATHES A LITTLE MORE AS IT DESCENDS
+   -------------------------------------------------- */
+
+.projects-page main::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    pointer-events: none;
+
+    z-index: -1;
+
+    background:
+        radial-gradient(
+            ellipse 55% 18% at 50% 32%,
+            rgba(82, 165, 175, 0.025),
+            transparent 72%
+        ),
+        radial-gradient(
+            ellipse 60% 20% at 50% 56%,
+            rgba(92, 175, 180, 0.035),
+            transparent 74%
+        ),
+        radial-gradient(
+            ellipse 70% 22% at 50% 78%,
+            rgba(110, 190, 185, 0.045),
+            transparent 76%
+        ),
+        radial-gradient(
+            ellipse 75% 24% at 50% 94%,
+            rgba(125, 200, 190, 0.055),
+            transparent 78%
+        );
+
+    opacity: 0.9;
+
+    pointer-events: none;
+}
+
+
+/* --------------------------------------------------
+   SECTION ATMOSPHERE
+   Very subtle warmth beneath the content
+   -------------------------------------------------- */
+
+.projects-page section {
+    position: relative;
+}
+
+
+/* --------------------------------------------------
+   LOWER SECTIONS — SLIGHTLY MORE OPEN
+   -------------------------------------------------- */
+
+.projects-page section:nth-of-type(n+4) {
+    background:
+        radial-gradient(
+            ellipse 70% 55% at 50% 50%,
+            rgba(70, 155, 165, 0.018),
+            transparent 72%
+        );
+}
+
+
+/* --------------------------------------------------
+   PRINCIPLES — QUIETEST LIGHT
+   -------------------------------------------------- */
+
+.projects-page section:last-of-type {
+    background:
+        radial-gradient(
+            ellipse 75% 70% at 50% 45%,
+            rgba(105, 185, 180, 0.045),
+            transparent 72%
+        );
+}
+
+
+/* --------------------------------------------------
+   JOIN A PROJECT
+   THE HUMAN INVITATION
+   -------------------------------------------------- */
+
+.projects-page .join-project,
+.projects-page .join-a-project {
+    position: relative;
+}
+
+.projects-page .join-project::before,
+.projects-page .join-a-project::before {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 8%;
+
+    width: min(700px, 90vw);
+    height: 260px;
+
+    transform: translateX(-50%);
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            ellipse,
+            rgba(105, 195, 190, 0.10) 0%,
+            rgba(75, 160, 165, 0.045) 35%,
+            transparent 72%
+        );
+
+    filter: blur(30px);
+
+    pointer-events: none;
+
+    opacity: 0.75;
+}
+
+
+/* --------------------------------------------------
+   FINAL CTA — WARM BUT RESTRAINED
+   -------------------------------------------------- */
+
+.projects-page .join-project .btn,
+.projects-page .join-a-project .btn {
+    position: relative;
+    z-index: 2;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.18),
+        0 0 24px rgba(100, 195, 190, 0.08);
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+
+@media (hover: hover) and (pointer: fine) {
+
+    .projects-page .join-project .btn:hover,
+    .projects-page .join-a-project .btn:hover {
+        transform: translateY(-2px);
+
+        box-shadow:
+            0 14px 36px rgba(0, 0, 0, 0.22),
+            0 0 32px rgba(110, 205, 195, 0.13);
+    }
+
+}
+
+
+/* --------------------------------------------------
+   MOBILE
+   -------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+    .projects-page main::before {
+        opacity: 0.72;
+    }
+
+    .projects-page section:nth-of-type(n+4) {
+        background:
+            radial-gradient(
+                ellipse 85% 45% at 50% 50%,
+                rgba(75, 160, 170, 0.016),
+                transparent 72%
+            );
+    }
+
+    .projects-page .join-project::before,
+    .projects-page .join-a-project::before {
+        width: 115vw;
+        height: 220px;
+
+        opacity: 0.58;
+    }
+
+}
