@@ -990,3 +990,69 @@ transparent 360deg
         text-align: center;
     }
 }
+/* ==================================================
+   PROJECTS HERO
+   MOBILE — TRUE SCREEN CENTER
+================================================== */
+
+@media (max-width: 768px) {
+
+    .projects-page .hero-content {
+        position: absolute !important;
+
+        top: 48px !important;
+        left: 50% !important;
+        right: auto !important;
+
+        width: calc(100% - 40px) !important;
+        max-width: 680px !important;
+        min-width: 0 !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        transform: translateX(-50%) !important;
+
+        box-sizing: border-box;
+
+        text-align: center !important;
+    }
+
+    .projects-page .hero-badge,
+    .projects-page .hero h1,
+    .projects-page .hero h2,
+    .projects-page .hero p {
+        position: relative !important;
+
+        left: auto !important;
+        right: auto !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin-left: auto !important;
+        margin-right: auto !important;
+
+        text-align: center !important;
+
+        box-sizing: border-box;
+    }
+
+    .projects-page .hero-badge {
+        width: fit-content !important;
+        max-width: 100% !important;
+    }
+
+    .projects-page .hero h1 {
+        font-size: clamp(2.7rem, 10vw, 4.5rem) !important;
+        line-height: 1.05 !important;
+    }
+
+    .projects-page .hero h2 {
+        max-width: 520px !important;
+    }
+
+    .projects-page .hero p {
+        max-width: 620px !important;
+    }
+}
