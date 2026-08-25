@@ -879,64 +879,114 @@ transparent 360deg
  }  
   /* ==================================================
    PROJECTS HERO
-   MOBILE CENTER FIX
+   MOBILE CENTER FIX — FINAL
 ================================================== */
 
 @media (max-width: 768px) {
 
     .projects-page .hero {
+        position: relative;
         display: flex;
         align-items: flex-start;
         justify-content: center;
+        width: 100%;
+        min-width: 0;
         padding: 48px 20px 80px;
+        box-sizing: border-box;
         overflow: hidden;
     }
 
     .projects-page .hero-content {
-        width: 100%;
-        max-width: 680px;
-        margin-left: auto !important;
-        margin-right: auto !important;
-        padding-left: 0;
-        padding-right: 0;
+        position: relative;
+        left: 0 !important;
+        right: 0 !important;
+        top: 0 !important;
+
+        display: block;
+
+        width: 100% !important;
+        max-width: 680px !important;
+        min-width: 0 !important;
+
+        margin: 0 auto !important;
+        padding: 0 !important;
+
+        box-sizing: border-box;
+
         text-align: center;
+
         transform: none !important;
     }
 
     .projects-page .hero-badge {
+        position: relative;
+        left: 0 !important;
+        right: 0 !important;
+
         display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        max-width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+
+        width: auto;
+        max-width: calc(100% - 20px);
+
+        margin: 0 auto 24px !important;
+
+        box-sizing: border-box;
+
         text-align: center;
+        justify-content: center;
     }
 
     .projects-page .hero h1 {
-        width: 100%;
-        max-width: 620px;
-        margin-left: auto;
-        margin-right: auto;
+        position: relative;
+        left: 0 !important;
+        right: 0 !important;
+
+        display: block;
+
+        width: 100% !important;
+        max-width: 620px !important;
+        min-width: 0 !important;
+
+        margin: 0 auto 24px !important;
+        padding: 0 !important;
+
+        box-sizing: border-box;
+
         text-align: center;
+
         font-size: clamp(2.7rem, 10vw, 4.5rem);
         line-height: 1.05;
     }
 
     .projects-page .hero h2 {
-        width: 100%;
-        max-width: 520px;
-        margin-left: auto;
-        margin-right: auto;
+        position: relative;
+        left: 0 !important;
+        right: 0 !important;
+
+        width: 100% !important;
+        max-width: 520px !important;
+
+        margin: 0 auto 24px !important;
+        padding: 0 !important;
+
+        box-sizing: border-box;
+
         text-align: center;
     }
 
     .projects-page .hero p {
-        width: 100%;
-        max-width: 620px;
-        margin-left: auto;
-        margin-right: auto;
+        position: relative;
+        left: 0 !important;
+        right: 0 !important;
+
+        width: 100% !important;
+        max-width: 620px !important;
+
+        margin: 0 auto !important;
+        padding: 0 !important;
+
+        box-sizing: border-box;
+
         text-align: center;
     }
-}              
-
+}
