@@ -147,20 +147,22 @@
         display: none !important;
     }
 
+    
     .mobile-nav {
     display: flex !important;
     align-items: center;
-    justify-content: flex-end;
-    gap: 10px;
+    justify-content: flex-end !important;
+    gap: 10px !important;
 
     margin-left: auto;
 
     position: relative;
-    z-index: 1001;
+    z-index: 10000;
     }
 
     .mobile-menu-wrapper {
-        position: relative;
+    position: relative;
+    z-index: 10001;
     }
 
     .menu-button {
@@ -353,7 +355,7 @@
         display: flex;
         align-items: center;
 
-        z-index: 1002;
+        z-index: 10002;
     }
 
     .language-button {
