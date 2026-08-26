@@ -283,3 +283,166 @@
   }
 
 }
+/* ==================================================
+   CINEMATIC GLOBE + LANGUAGE BREATHING
+   ================================================== */
+
+@keyframes globeCinematicPulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow:
+      0 0 0 rgba(70, 190, 255, 0),
+      0 0 18px rgba(70, 190, 255, 0.18);
+  }
+
+  50% {
+    transform: scale(1.055);
+    box-shadow:
+      0 0 18px rgba(70, 190, 255, 0.28),
+      0 0 42px rgba(70, 190, 255, 0.18);
+  }
+}
+
+
+@keyframes globeLight {
+
+  0%,
+  100% {
+    opacity: 0.65;
+    filter: brightness(1);
+  }
+
+  50% {
+    opacity: 1;
+    filter: brightness(1.18);
+  }
+}
+
+
+/* LANGUAGE GLOBE BUTTON */
+
+.language-button,
+.language-btn,
+.language-globe button,
+.language-globe .language-button {
+  animation: globeCinematicPulse 4.5s ease-in-out infinite;
+  transform-origin: center;
+}
+
+
+/* Globe itself */
+
+.language-globe {
+  animation: globeLight 4.5s ease-in-out infinite;
+}
+
+
+/* ==================================================
+   LANGUAGE DROPDOWN
+   ================================================== */
+
+.language-dropdown {
+  transform-origin: top right;
+  animation: languagePanelOpen 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+@keyframes languagePanelOpen {
+
+  from {
+    opacity: 0;
+    transform: translateY(-12px) scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+}
+
+
+/* ==================================================
+   FLAGS / LANGUAGE LINKS
+   ================================================== */
+
+.language-dropdown a {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease,
+    filter 0.3s ease;
+}
+
+
+.language-dropdown a::first-letter {
+  display: inline-block;
+}
+
+
+/* Individual breathing effect */
+
+.language-dropdown a:nth-child(1) {
+  animation: flagBreathing 3.2s ease-in-out infinite;
+  animation-delay: 0s;
+}
+
+.language-dropdown a:nth-child(2) {
+  animation: flagBreathing 3.2s ease-in-out infinite;
+  animation-delay: 0.7s;
+}
+
+
+@keyframes flagBreathing {
+
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.88;
+    filter: brightness(1);
+  }
+
+  50% {
+    transform: scale(1.045);
+    opacity: 1;
+    filter: brightness(1.18);
+  }
+
+}
+
+
+/* ==================================================
+   LANGUAGE BUTTON HOVER
+   ================================================== */
+
+.language-dropdown a:hover {
+  transform: translateX(-4px) scale(1.05);
+  opacity: 1;
+  filter: brightness(1.25);
+}
+
+
+/* ==================================================
+   MOBILE PERFORMANCE
+   ================================================== */
+
+@media (max-width: 600px) {
+
+  .language-globe {
+    animation-duration: 4.5s;
+  }
+
+  .language-dropdown {
+    animation-duration: 0.5s;
+  }
+
+  .language-dropdown a {
+    font-size: 1rem;
+  }
+
+   }
