@@ -157,12 +157,12 @@
     margin-left: auto;
 
     position: relative;
-    z-index: 10000;
+    z-index: 10001;
     }
 
     .mobile-menu-wrapper {
     position: relative;
-    z-index: 10001;
+    z-index: 10002;
     }
 
     .menu-button {
@@ -225,7 +225,7 @@
             #07131e 100%
         );
 
-    z-index: 10000;
+    z-index: 10003;
     }
 
     .menu-items.active {
@@ -355,7 +355,7 @@
         display: flex;
         align-items: center;
 
-        z-index: 10002;
+        z-index: 10001;
     }
 
     .language-button {
