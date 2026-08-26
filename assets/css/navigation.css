@@ -165,6 +165,64 @@
     z-index: 10002;
     }
 
+   .language-globe {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    z-index: 10002;
+}
+
+.language-button {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    flex-shrink: 0;
+
+    border: 0;
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.08);
+    color: white;
+
+    font-size: 22px;
+    cursor: pointer;
+
+    animation: globeBreathing 3s ease-in-out infinite;
+}
+
+.language-dropdown {
+    display: none;
+
+    position: absolute;
+
+    top: 48px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: rgba(20,25,40,0.95);
+
+    border-radius: 16px;
+
+    padding: 12px;
+
+    min-width: 120px;
+
+    backdrop-filter: blur(12px);
+
+    z-index: 10003;
+}
+
+.language-globe:hover .language-dropdown {
+    display: block;
+}
     .menu-button {
 
     width: 40px;
