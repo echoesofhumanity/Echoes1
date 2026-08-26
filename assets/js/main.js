@@ -1,16 +1,51 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const button = document.querySelector(".menu-button");
-    const menu = document.querySelector(".menu-items");
+  /* ==================================================
+     HAMBURGER MENU
+     ================================================== */
 
-    if (button && menu) {
+  const menuButton = document.querySelector(".menu-button");
+  const menu = document.querySelector(".menu-items");
 
-        button.addEventListener("click", () => {
+  if (menuButton && menu) {
 
-            menu.classList.toggle("active");
+    menuButton.addEventListener("click", () => {
 
-        });
+      menu.classList.toggle("active");
 
-    }
+    });
+
+  }
+
+
+  /* ==================================================
+     LANGUAGE MENU
+     ================================================== */
+
+  const languageGlobe = document.querySelector(".language-globe");
+  const languageButton = document.querySelector(".language-button");
+
+  if (languageGlobe && languageButton) {
+
+    languageButton.addEventListener("click", (event) => {
+
+      event.stopPropagation();
+
+      languageGlobe.classList.toggle("active");
+
+    });
+
+
+    document.addEventListener("click", (event) => {
+
+      if (!languageGlobe.contains(event.target)) {
+
+        languageGlobe.classList.remove("active");
+
+      }
+
+    });
+
+  }
 
 });
