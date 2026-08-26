@@ -29,10 +29,13 @@
 .projects-in-action,
 .how-projects-work,
 .global-project-network,
-.project-principles {
+.project-principles 
+.volunteer-areas,
+.how-volunteering-works,{
   position: relative;
   padding: 96px 0;
   overflow: hidden;
+   
 }
 
 
@@ -60,7 +63,9 @@
 .projects-in-action::before,
 .how-projects-work::before,
 .global-project-network::before,
-.project-principles::before {
+.project-principles::before 
+.volunteer-areas::before,
+.how-volunteering-works::before {
   content: "";
   position: absolute;
 
@@ -104,6 +109,8 @@
 .projects-in-action h2,
 .how-projects-work h2,
 .global-project-network h2,
+   .volunteer-areas h2,
+.how-volunteering-works h2,
 .project-principles h2 {
   position: relative;
   z-index: 1;
@@ -164,7 +171,9 @@
 .merchandise-design,
 .partners,
 .project-ecosystem,
-.global-project-network {
+.global-project-network,
+.volunteer-areas,
+.how-volunteering-works {
   background:
     radial-gradient(
       circle at 15% 20%,
@@ -423,9 +432,11 @@
   .projects-in-action,
   .how-projects-work,
   .global-project-network,
-  .project-principles {
-    padding: 72px 0;
-  }
+.project-principles,
+.volunteer-areas,
+.how-volunteering-works {
+  padding: 72px 0;
+}
 
   .features h2,
   .who-we-are h2,
@@ -447,6 +458,8 @@
   .projects-in-action h2,
   .how-projects-work h2,
   .global-project-network h2,
+   .volunteer-areas h2,
+.how-volunteering-works h2,
   .project-principles h2 {
     font-size: 2rem;
   }
