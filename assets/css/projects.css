@@ -1,54 +1,60 @@
 /* ==================================================
    ECHOES OF HUMANITY
    PROJECTS PAGE
-   MOBILE HERO ALIGNMENT
+   MOBILE HERO — FINAL CENTER ALIGNMENT
 ================================================== */
 
 @media (max-width: 768px) {
 
     /* --------------------------------------------------
-       PROJECTS HERO — FULL VIEWPORT
+       HERO
     -------------------------------------------------- */
 
     .projects-page .hero {
-        width: 100%;
-        max-width: 100%;
-        margin: 0;
-        padding: 48px 24px 70px;
+        width: 100% !important;
+        max-width: 100% !important;
 
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
+        margin: 0 !important;
+        padding: 48px 24px 70px !important;
 
-        box-sizing: border-box;
-        overflow: hidden;
+        display: flex !important;
+        align-items: flex-start !important;
+        justify-content: center !important;
+
+        box-sizing: border-box !important;
+        overflow: hidden !important;
     }
 
 
     /* --------------------------------------------------
-       PROJECTS HERO CONTENT — HARD CENTER
+       HERO CONTENT
+       FORCE TRUE CENTER
     -------------------------------------------------- */
 
     .projects-page .hero > .hero-content {
-        position: relative;
+        position: relative !important;
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        left: 0 !important;
+        right: 0 !important;
+        top: auto !important;
+        bottom: auto !important;
 
-        width: 100%;
-        max-width: 680px;
+        transform: none !important;
 
-        margin: 0 auto;
-        padding: 0;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
 
-        box-sizing: border-box;
+        width: 100% !important;
+        max-width: 680px !important;
+        min-width: 0 !important;
 
-        text-align: center;
+        margin: 0 auto !important;
+        padding: 0 !important;
 
-        left: auto;
-        right: auto;
-        transform: none;
+        box-sizing: border-box !important;
+
+        text-align: center !important;
     }
 
 
@@ -57,17 +63,18 @@
     -------------------------------------------------- */
 
     .projects-page .hero-badge {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
 
-        width: auto;
-        max-width: 100%;
+        width: fit-content !important;
+        max-width: 100% !important;
 
-        margin: 0 auto 24px;
-        box-sizing: border-box;
+        margin: 0 auto 24px !important;
 
-        text-align: center;
+        box-sizing: border-box !important;
+
+        text-align: center !important;
     }
 
 
@@ -76,17 +83,21 @@
     -------------------------------------------------- */
 
     .projects-page .hero h1 {
-        width: 100%;
-        max-width: 680px;
+        display: block !important;
 
-        margin: 0 auto 24px;
+        width: 100% !important;
+        max-width: 680px !important;
+        min-width: 0 !important;
 
-        box-sizing: border-box;
+        margin: 0 auto 24px !important;
+        padding: 0 !important;
 
-        text-align: center;
+        box-sizing: border-box !important;
 
-        font-size: clamp(2.7rem, 10vw, 4.5rem);
-        line-height: 1.05;
+        text-align: center !important;
+
+        font-size: clamp(2.7rem, 10vw, 4.5rem) !important;
+        line-height: 1.05 !important;
     }
 
 
@@ -95,14 +106,18 @@
     -------------------------------------------------- */
 
     .projects-page .hero h2 {
-        width: 100%;
-        max-width: 520px;
+        display: block !important;
 
-        margin: 0 auto 20px;
+        width: 100% !important;
+        max-width: 520px !important;
+        min-width: 0 !important;
 
-        box-sizing: border-box;
+        margin: 0 auto 20px !important;
+        padding: 0 !important;
 
-        text-align: center;
+        box-sizing: border-box !important;
+
+        text-align: center !important;
     }
 
 
@@ -111,14 +126,42 @@
     -------------------------------------------------- */
 
     .projects-page .hero p {
-        width: 100%;
-        max-width: 620px;
+        display: block !important;
 
-        margin: 0 auto 32px;
+        width: 100% !important;
+        max-width: 620px !important;
+        min-width: 0 !important;
 
-        box-sizing: border-box;
+        margin: 0 auto 32px !important;
+        padding: 0 !important;
 
-        text-align: center;
+        box-sizing: border-box !important;
+
+        text-align: center !important;
+
+        overflow-wrap: break-word !important;
+        word-break: normal !important;
+    }
+
+}
+
+
+/* ==================================================
+   SMALL PHONES
+================================================== */
+
+@media (max-width: 600px) {
+
+    .projects-page .hero > .hero-content {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .projects-page .hero h1 {
+        font-size: clamp(2.7rem, 10vw, 4.5rem) !important;
     }
 
 }
