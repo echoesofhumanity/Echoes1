@@ -303,4 +303,73 @@
         overflow-wrap: break-word;
     }
 }
+/* ==================================================
+   PROJECTS HERO — MOBILE CENTER FIX
+   ================================================== */
 
+@media (max-width: 768px) {
+
+    .projects-page .hero-content {
+        position: relative !important;
+
+        left: 0 !important;
+        right: 0 !important;
+
+        width: calc(100% - 32px) !important;
+        max-width: 680px !important;
+        min-width: 0 !important;
+
+        margin-left: auto !important;
+        margin-right: auto !important;
+
+        padding: 0 !important;
+
+        box-sizing: border-box !important;
+
+        text-align: center !important;
+    }
+
+    .projects-page .hero-badge {
+        display: inline-block !important;
+
+        margin-left: auto !important;
+        margin-right: auto !important;
+
+        max-width: 100% !important;
+
+        text-align: center !important;
+    }
+
+    .projects-page .hero h1 {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin-left: auto !important;
+        margin-right: auto !important;
+
+        text-align: center !important;
+
+        white-space: normal !important;
+        overflow-wrap: normal !important;
+        word-break: normal !important;
+    }
+
+    .projects-page .hero-values {
+        width: 100% !important;
+
+        margin-left: auto !important;
+        margin-right: auto !important;
+
+        text-align: center !important;
+    }
+
+    .projects-page .hero-description {
+        width: 100% !important;
+        max-width: 620px !important;
+
+        margin-left: auto !important;
+        margin-right: auto !important;
+
+        text-align: center !important;
+    }
+}
