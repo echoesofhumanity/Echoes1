@@ -609,6 +609,81 @@
   </footer>
 
 <script src="assets/js/main.js?v=2"></script>
+  /* ==================================================
+   PROJECTS HERO — MOBILE CENTER FIX
+   ================================================== */
+
+@media (max-width: 768px) {
+
+    .projects-page .hero {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .projects-page .hero > .hero-content {
+        position: relative;
+
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+
+        box-sizing: border-box !important;
+
+        text-align: center !important;
+
+        left: 0 !important;
+        right: auto !important;
+    }
+
+    .projects-page .hero-badge {
+        display: inline-flex;
+
+        width: auto !important;
+        max-width: 100% !important;
+
+        margin-left: auto !important;
+        margin-right: auto !important;
+
+        box-sizing: border-box;
+    }
+
+    .projects-page .hero h1,
+    .projects-page .hero h2,
+    .projects-page .hero p {
+        width: 100% !important;
+        max-width: 680px !important;
+
+        margin-left: auto !important;
+        margin-right: auto !important;
+
+        box-sizing: border-box;
+
+        text-align: center !important;
+    }
+
+    .projects-page .hero h1 {
+        font-size: clamp(2.7rem, 10vw, 4.5rem) !important;
+        line-height: 1.05 !important;
+    }
+
+    .projects-page .hero h2 {
+        font-size: 1.25rem;
+    }
+
+    .projects-page .hero p {
+        font-size: 0.94rem;
+        line-height: 1.8;
+    }
+}
 
   
 </body>
