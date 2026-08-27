@@ -165,3 +165,88 @@
     }
 
 }
+/* ==================================================
+   PROJECTS PAGE
+   MOBILE HERO — FINAL CENTER ALIGNMENT
+================================================== */
+
+@media (max-width: 768px) {
+
+    .projects-page .hero {
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+        box-sizing: border-box;
+    }
+
+    .projects-page .hero > .hero-content,
+    .projects-page .hero-content {
+        width: 100% !important;
+        max-width: 680px !important;
+        min-width: 0 !important;
+
+        margin-left: auto !important;
+        margin-right: auto !important;
+
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+
+        position: relative;
+        left: 0 !important;
+        right: 0 !important;
+        transform: none !important;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center !important;
+        box-sizing: border-box;
+    }
+
+    .projects-page .hero-badge,
+    .projects-page .hero h1,
+    .projects-page .hero h2,
+    .projects-page .hero p,
+    .projects-page .hero-description,
+    .projects-page .hero-values,
+    .projects-page .hero-actions {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        box-sizing: border-box;
+        text-align: center !important;
+    }
+
+    .projects-page .hero-badge {
+        width: fit-content !important;
+        max-width: 100% !important;
+    }
+
+    .projects-page .hero h1 {
+        width: 100% !important;
+        max-width: 680px !important;
+        font-size: clamp(2.7rem, 10vw, 4.5rem) !important;
+        line-height: 1.05 !important;
+    }
+
+    .projects-page .hero h2 {
+        width: 100% !important;
+        max-width: 520px !important;
+    }
+
+    .projects-page .hero p,
+    .projects-page .hero-description {
+        width: 100% !important;
+        max-width: 620px !important;
+    }
+
+    .projects-page .hero-values {
+        width: 100% !important;
+        justify-content: center !important;
+    }
+
+    .projects-page .hero-actions {
+        width: 100% !important;
+        justify-content: center !important;
+    }
+   }
