@@ -305,6 +305,9 @@
     max-width: 420px;
 
     padding: 9px 0;
+       margin: 0;
+line-height: 1.2;
+height: auto;
 
     text-align: center;
 
