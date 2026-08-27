@@ -12,7 +12,7 @@
 .site-header {
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 10000;
     width: 100%;
     background: rgba(8, 18, 32, 0.95);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -194,12 +194,12 @@
 
     /* Hamburger wrapper */
 
-    .mobile-menu-wrapper {
-        position: relative;
-        display: flex;
-        align-items: center;
-        z-index: 10002;
-    }
+.mobile-menu-wrapper {
+    position: static;
+    display: flex;
+    align-items: center;
+    z-index: 10002;
+}
 
 
     /* Hamburger */
@@ -233,7 +233,7 @@
     ================================================== */
 
 .menu-items {
-    position: absolute;
+    position: fixed;
 
     top: 72px;
     left: 0;
@@ -596,7 +596,7 @@ height: auto;
     transform: scale(1);
   }
    }
-    .
+    
 
 /* ==================================================
    ANIMATIONS
