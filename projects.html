@@ -685,7 +685,46 @@
     }
 }
 
-  
+ /* ==================================================
+   PROJECTS HERO — TRUE VIEWPORT CENTER
+   FINAL MOBILE ALIGNMENT
+   ================================================== */
+
+@media (max-width: 768px) {
+
+    .projects-page .hero > .hero-content {
+        width: 100vw !important;
+        max-width: none !important;
+        min-width: 0 !important;
+
+        margin-left: calc(50% - 50vw) !important;
+        margin-right: 0 !important;
+
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+
+        box-sizing: border-box !important;
+
+        text-align: center !important;
+
+        position: relative;
+        left: 0 !important;
+        right: auto !important;
+    }
+
+    .projects-page .hero-badge {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .projects-page .hero h1,
+    .projects-page .hero h2,
+    .projects-page .hero p {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: center !important;
+    }
+} 
 </body>
 </html>
 
