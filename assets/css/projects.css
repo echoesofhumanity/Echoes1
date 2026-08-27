@@ -373,3 +373,63 @@
         text-align: center !important;
     }
 }
+/* ==================================================
+   PROJECTS HERO — FINAL MOBILE CENTERING
+   ================================================== */
+
+@media (max-width: 768px) {
+
+    .projects-page .hero {
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .projects-page .hero-content {
+        position: absolute !important;
+
+        top: 90px !important;
+        left: 50% !important;
+        right: auto !important;
+
+        width: calc(100% - 32px) !important;
+        max-width: 680px !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        box-sizing: border-box !important;
+
+        transform: translateX(-50%) !important;
+
+        text-align: center !important;
+    }
+
+    .projects-page .hero-badge,
+    .projects-page .hero h1,
+    .projects-page .hero-values,
+    .projects-page .hero-description {
+        position: relative !important;
+
+        left: auto !important;
+        right: auto !important;
+
+        margin-left: auto !important;
+        margin-right: auto !important;
+
+        text-align: center !important;
+    }
+
+    .projects-page .hero h1 {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        white-space: normal !important;
+        word-break: normal !important;
+        overflow-wrap: normal !important;
+    }
+
+    .projects-page .hero-description {
+        width: 100% !important;
+        max-width: 620px !important;
+    }
+}
