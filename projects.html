@@ -590,36 +590,7 @@
   </footer>
 
 <script src="assets/js/main.js?v=2"></script>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
 
-    const menuButton = document.querySelector(".menu-button");
-    const menu = document.querySelector(".menu-items");
-
-    if (menuButton && menu) {
-        menuButton.addEventListener("click", function () {
-            menu.classList.toggle("active");
-        });
-    }
-
-    const languageButton = document.querySelector(".language-button");
-    const languageGlobe = document.querySelector(".language-globe");
-
-    if (languageButton && languageGlobe) {
-        languageButton.addEventListener("click", function (event) {
-            event.stopPropagation();
-            languageGlobe.classList.toggle("active");
-        });
-
-        document.addEventListener("click", function (event) {
-            if (!languageGlobe.contains(event.target)) {
-                languageGlobe.classList.remove("active");
-            }
-        });
-    }
-
-});
-</script>
   
 </body>
 </html>
