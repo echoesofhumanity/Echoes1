@@ -6,69 +6,119 @@
 
 @media (max-width: 768px) {
 
+    /* --------------------------------------------------
+       PROJECTS HERO — FULL VIEWPORT
+    -------------------------------------------------- */
+
     .projects-page .hero {
         width: 100%;
         max-width: 100%;
         margin: 0;
-        padding-left: 24px;
-        padding-right: 24px;
-        box-sizing: border-box;
+        padding: 48px 24px 70px;
 
         display: flex;
         align-items: flex-start;
         justify-content: center;
 
+        box-sizing: border-box;
         overflow: hidden;
     }
 
-    .projects-page .hero-content {
+
+    /* --------------------------------------------------
+       PROJECTS HERO CONTENT — HARD CENTER
+    -------------------------------------------------- */
+
+    .projects-page .hero > .hero-content {
         position: relative;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         width: 100%;
         max-width: 680px;
 
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
+        padding: 0;
 
         box-sizing: border-box;
 
         text-align: center;
+
+        left: auto;
+        right: auto;
+        transform: none;
     }
 
-    .projects-page .hero-badge,
-    .projects-page .hero h1,
-    .projects-page .hero h2,
-    .projects-page .hero-description,
-    .projects-page .hero p {
-        margin-left: auto;
-        margin-right: auto;
 
-        box-sizing: border-box;
-
-        text-align: center;
-    }
+    /* --------------------------------------------------
+       BADGE
+    -------------------------------------------------- */
 
     .projects-page .hero-badge {
-        display: table;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        width: auto;
         max-width: 100%;
+
+        margin: 0 auto 24px;
+        box-sizing: border-box;
+
+        text-align: center;
     }
+
+
+    /* --------------------------------------------------
+       TITLE
+    -------------------------------------------------- */
 
     .projects-page .hero h1 {
         width: 100%;
         max-width: 680px;
 
+        margin: 0 auto 24px;
+
+        box-sizing: border-box;
+
+        text-align: center;
+
         font-size: clamp(2.7rem, 10vw, 4.5rem);
         line-height: 1.05;
     }
 
+
+    /* --------------------------------------------------
+       SUBTITLE
+    -------------------------------------------------- */
+
     .projects-page .hero h2 {
         width: 100%;
         max-width: 520px;
+
+        margin: 0 auto 20px;
+
+        box-sizing: border-box;
+
+        text-align: center;
     }
 
-    .projects-page .hero-description,
+
+    /* --------------------------------------------------
+       DESCRIPTION
+    -------------------------------------------------- */
+
     .projects-page .hero p {
         width: 100%;
         max-width: 620px;
+
+        margin: 0 auto 32px;
+
+        box-sizing: border-box;
+
+        text-align: center;
     }
+
 }
