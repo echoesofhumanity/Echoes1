@@ -132,10 +132,16 @@
 
     /* Header stays exactly 72px */
 
-    .site-header {
-        height: 72px;
-        min-height: 72px;
-    }
+.site-header {
+    height: 72px;
+    min-height: 72px;
+
+    /* Mobile navigation must escape header stacking */
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+
+    overflow: visible;
+}
 
     .site-header .container {
         height: 72px;
@@ -179,18 +185,22 @@
 
     /* Mobile controls */
 
-    .mobile-nav {
-        display: flex !important;
-        align-items: center;
-        justify-content: flex-end;
-        gap: 10px;
-        width: auto;
-        height: 72px;
-        margin-left: auto;
-        position: relative;
-        z-index: 10001;
-    }
+.mobile-nav {
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
 
+    width: auto;
+    height: 72px;
+
+    margin-left: auto;
+
+    position: relative;
+    z-index: 10001;
+
+    flex-shrink: 0;
+}
 
     /* Hamburger wrapper */
 
@@ -198,7 +208,9 @@
     position: static;
     display: flex;
     align-items: center;
+
     z-index: 10002;
+    flex-shrink: 0;
 }
 
 
@@ -361,12 +373,14 @@ height: auto;
    ================================================== */
 
 .language-globe {
-  position: relative;
-  display: flex;
-  align-items: center;
-  z-index: 10001;
-}
+    position: relative;
 
+    display: flex;
+    align-items: center;
+
+    z-index: 10003;
+    flex-shrink: 0;
+}
 .language-button {
   width: 40px;
   height: 40px;
