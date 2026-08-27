@@ -877,4 +877,59 @@ transparent 360deg
         transform: rotate(360deg);
     }
  }  
-  
+  /* ==================================================
+   PROJECTS HERO
+   MOBILE — PREVENT HORIZONTAL OVERFLOW
+================================================== */
+
+@media (max-width: 768px) {
+
+    .projects-page .hero-content {
+        width: calc(100% - 48px) !important;
+        max-width: 680px !important;
+        min-width: 0 !important;
+
+        margin-left: auto !important;
+        margin-right: auto !important;
+
+        padding: 0 !important;
+
+        box-sizing: border-box;
+
+        text-align: center !important;
+    }
+
+    .projects-page .hero-badge,
+    .projects-page .hero h1,
+    .projects-page .hero h2,
+    .projects-page .hero p {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin-left: auto !important;
+        margin-right: auto !important;
+
+        box-sizing: border-box;
+
+        text-align: center !important;
+    }
+
+    .projects-page .hero-badge {
+        width: fit-content !important;
+        max-width: 100% !important;
+    }
+
+    .projects-page .hero h1 {
+        font-size: clamp(2.7rem, 10vw, 4.5rem) !important;
+        line-height: 1.05 !important;
+    }
+
+    .projects-page .hero h2 {
+        max-width: 520px !important;
+    }
+
+    .projects-page .hero p {
+        max-width: 620px !important;
+        overflow-wrap: break-word;
+    }
+}
