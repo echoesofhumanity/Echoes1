@@ -233,7 +233,7 @@
     ================================================== */
 
 .menu-items {
-    position: fixed;
+    position: absolute;
 
     top: 72px;
     left: 0;
