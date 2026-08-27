@@ -1,11 +1,74 @@
 /* ==================================================
    ECHOES OF HUMANITY
    PROJECTS PAGE
-   PAGE-SPECIFIC STYLES
+   MOBILE HERO ALIGNMENT
 ================================================== */
 
-/*
-   Projects page overrides live here.
+@media (max-width: 768px) {
 
-   Shared CSS files are intentionally not modified.
-*/
+    .projects-page .hero {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding-left: 24px;
+        padding-right: 24px;
+        box-sizing: border-box;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+
+        overflow: hidden;
+    }
+
+    .projects-page .hero-content {
+        position: relative;
+
+        width: 100%;
+        max-width: 680px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        box-sizing: border-box;
+
+        text-align: center;
+    }
+
+    .projects-page .hero-badge,
+    .projects-page .hero h1,
+    .projects-page .hero h2,
+    .projects-page .hero-description,
+    .projects-page .hero p {
+        margin-left: auto;
+        margin-right: auto;
+
+        box-sizing: border-box;
+
+        text-align: center;
+    }
+
+    .projects-page .hero-badge {
+        display: table;
+        max-width: 100%;
+    }
+
+    .projects-page .hero h1 {
+        width: 100%;
+        max-width: 680px;
+
+        font-size: clamp(2.7rem, 10vw, 4.5rem);
+        line-height: 1.05;
+    }
+
+    .projects-page .hero h2 {
+        width: 100%;
+        max-width: 520px;
+    }
+
+    .projects-page .hero-description,
+    .projects-page .hero p {
+        width: 100%;
+        max-width: 620px;
+    }
+}
