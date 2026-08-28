@@ -120,3 +120,35 @@
   }
 
 }
+/* ==================================================
+   CINEMATIC BUTTON OVERRIDES
+   ================================================== */
+
+.btn {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.22);
+}
+
+.btn-primary {
+  background: #6aaeb5;
+  border-color: #6aaeb5;
+  color: #071218;
+}
+
+.btn-primary:hover {
+  background: #8bc5ca;
+  border-color: #8bc5ca;
+  color: #071218;
+  box-shadow: 0 10px 30px rgba(106, 174, 181, 0.25);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(143, 190, 205, 0.38);
+  color: #dbe8ee;
+}
+
+.btn-secondary:hover {
+  background: rgba(143, 190, 205, 0.10);
+  border-color: rgba(143, 190, 205, 0.65);
+  color: #ffffff;
+}
